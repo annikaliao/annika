@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ```markdown
   # "My First Post"
   > "Annika's markdown post"
@@ -14,10 +13,3 @@
   - metadata_key1: metadata_value1
   - metadata_key2: metadata_value2
   ```
-=======
-toc: true
-layout: post
-description: Annika's markdown post
-categories: [markdown]
-title: Hacks
->>>>>>> 976b2f94388deea634e524fd97d97345731499c1
