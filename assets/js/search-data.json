@@ -2,22 +2,22 @@
   
     
         "post0": {
-            "title": "Title",
-            "content": "msg = &quot;hello world&quot; print(msg) . hello world .",
-            "url": "https://annikaliao.github.io/annika/2022/08/26/my-first-post.html",
-            "relUrl": "/2022/08/26/my-first-post.html",
-            "date": " • Aug 26, 2022"
+            "title": "Hacks",
+            "content": "Hacks .",
+            "url": "https://annikaliao.github.io/annika/markdown/2022/08/27/post.html",
+            "relUrl": "/markdown/2022/08/27/post.html",
+            "date": " • Aug 27, 2022"
         }
         
     
   
     
         ,"post1": {
-            "title": "My First Post",
-            "content": "«««&lt; HEAD . # &quot;My First Post&quot; &gt; &quot;Annika&#39;s markdown post&quot; - toc: false - branch: master - badges: true - comments: false - categories: [fastpages, jupyter] - image: images/fastpages_posts/IMG_8550 (1).png - hide: false - search_exclude: true - metadata_key1: metadata_value1 - metadata_key2: metadata_value2 . ======= toc: true layout: post description: Annika’s markdown post categories: [markdown] title: Hacks . 976b2f94388deea634e524fd97d97345731499c1 .",
-            "url": "https://annikaliao.github.io/annika/2022/08/24/my-first-post.html",
-            "relUrl": "/2022/08/24/my-first-post.html",
-            "date": " • Aug 24, 2022"
+            "title": "Title",
+            "content": "msg = &quot;hello world&quot; print(msg) . hello world .",
+            "url": "https://annikaliao.github.io/annika/2022/08/26/my-first-post.html",
+            "relUrl": "/2022/08/26/my-first-post.html",
+            "date": " • Aug 26, 2022"
         }
         
     
