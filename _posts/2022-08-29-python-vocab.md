@@ -1,11 +1,11 @@
 ---
 toc: true
 layout: post
-description: Python vocab 
+description: Python terms I have learned 
 categories: [markdown]
 title: Python Vocab
 ---
- # Python Vocab 
+# Python Vocab 
 
  msg: used to capture the input command, then used as a parameterto print command, causing input to be output to terminal
  - for example: msg = input("Enter a greeting: ") print(msg)
