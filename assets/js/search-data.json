@@ -24,10 +24,10 @@
   
     
         ,"post2": {
-            "title": "Title",
+            "title": "Python Quiz",
             "content": "import getpass, sys def question_with_response(prompt): print(&quot;Question: &quot; + prompt) msg = input() return msg questions = 3 correct = 0 print(&#39;Hello, &#39; + getpass.getuser() + &quot; running &quot; + sys.executable) print(&quot;You will be asked &quot; + str(questions) + &quot; questions.&quot;) question_and_answer = (&quot;Are you ready to take a test?&quot;) rsp = question_with_response(&quot;What&#39;s my favorite color?&quot;) if rsp == &quot;purple&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;What is my height?&quot;) if rsp == &quot;5 foot 4 inches&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;How many siblings do I have&quot;) if rsp == &quot;1&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) print(getpass.getuser() + &quot; you scored &quot; + str(correct) +&quot;/&quot; + str(questions)) . Hello, annikaliao running /bin/python3 You will be asked 3 questions. Question: What&#39;s my favorite color? purple is correct! Question: What is my height? 5 foot 4 inches is correct! Question: How many siblings do I have 1 is correct! annikaliao you scored 3/3 .",
-            "url": "https://annikaliao.github.io/annika/2022/08/29/intro-to-python.html",
-            "relUrl": "/2022/08/29/intro-to-python.html",
+            "url": "https://annikaliao.github.io/annika/jupyter/2022/08/29/intro-to-python.html",
+            "relUrl": "/jupyter/2022/08/29/intro-to-python.html",
             "date": " • Aug 29, 2022"
         }
         
