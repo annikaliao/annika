@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Remote Theme Change",
-            "content": "Remote Theme Change . Experimenting with web page layout with Jekyll .",
+            "content": "Remote Theme Change . Experimenting with web page layout with Jekyll . ![This is an image]( . I changed the remote theme in config.yml from the default minima to minimal. There weren’t any problems in sight from the change. .",
             "url": "https://annikaliao.github.io/annika/markdown/2022/09/02/remote-theme-change.html",
             "relUrl": "/markdown/2022/09/02/remote-theme-change.html",
             "date": " • Sep 2, 2022"
