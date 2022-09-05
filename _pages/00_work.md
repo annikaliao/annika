@@ -24,3 +24,31 @@ title: Work
             <a href="https://annikaliao.github.io/annika/jupyter/2022/09/01/python-list.html">Python List (Quiz)</a>
         </td>
     </tr>
+
+    <tr>
+        <td>
+            1
+        </td>
+        <td>
+            <a href="https://annikaliao.github.io/annika/markdown/2022/08/29/python-vocab.html">Python Vocab</a>
+        </td>
+        <td>
+            <a href="https://annikaliao.github.io/annika/jupyter/2022/08/26/Bash.html">Bash Check</a>
+            <br>
+            <a href="https://annikaliao.github.io/annika/markdown/2022/08/29/other-class-notes.html">Other Class Notes (Honors Humanities)</a>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            0
+        </td>
+        <td>
+            N/A
+        </td>
+        <td>
+            <a href="https://annikaliao.github.io/annika/markdown/2022/08/29/post.html">Musix Blog (First Markdown)</a>
+            <br>
+            <a href="https://annikaliao.github.io/annika/jupyter/2022/08/26/my-first-post.html">Python Hello (First Jupyter Notebook)</a>
+        </td>
+    </tr>
