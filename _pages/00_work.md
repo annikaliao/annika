@@ -1,3 +1,9 @@
+---
+layout: page
+permalink: /work
+title: Work
+---
+
 <table>
     <tr>
      <th>Week</th>
