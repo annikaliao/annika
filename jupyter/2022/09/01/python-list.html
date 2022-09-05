@@ -148,8 +148,10 @@ window.onload = wrap_img;
 <span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">&quot;no&quot;</span> <span class="p">:</span>
     <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;That&#39;s too bad.</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>  
 
-<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;What is your name?&quot;</span><span class="p">)</span>
-<span class="n">name</span> <span class="o">=</span> <span class="nb">input</span> <span class="p">(</span><span class="s1">&#39;What is your name?</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="c1"># questions that collect the user&#39;s data:</span>
+
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;What is your name?&quot;</span><span class="p">)</span> 
+<span class="n">name</span> <span class="o">=</span> <span class="nb">input</span> <span class="p">(</span><span class="s1">&#39;What is your name?</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span> <span class="c1"># input collects the data, and I am able to use the data throughout the code</span>
 
 <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Hello &quot;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">&quot;! How old are you?&quot;</span><span class="p">)</span>
 <span class="n">age</span> <span class="o">=</span> <span class="nb">input</span> <span class="p">(</span><span class="s1">&#39;How old are you?</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
@@ -161,7 +163,7 @@ window.onload = wrap_img;
 
 <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Thanks for doing my quiz! Here is your info:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 
-<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span> <span class="c1"># I used the inputs from the questions to input the same info into the InfoDb</span>
     <span class="s2">&quot;Name&quot;</span> <span class="p">:</span> <span class="n">name</span><span class="p">,</span>
     <span class="s2">&quot;Age&quot;</span> <span class="p">:</span> <span class="n">age</span><span class="p">,</span>
     <span class="s2">&quot;Favorite color&quot;</span> <span class="p">:</span> <span class="n">color</span>
@@ -169,11 +171,11 @@ window.onload = wrap_img;
 
 <span class="k">def</span> <span class="nf">print_data</span><span class="p">(</span><span class="n">d_rec</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Name&quot;</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;Name&quot;</span><span class="p">])</span>  <span class="c1"># using comma puts space between values</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Age:&quot;</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;Age&quot;</span><span class="p">])</span> <span class="c1"># \t is a tab indent</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Age:&quot;</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;Age&quot;</span><span class="p">])</span> 
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Favorite Color:&quot;</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;Favorite color&quot;</span><span class="p">],</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>  <span class="c1"># end=&quot;&quot; make sure no return occurs</span>
     <span class="nb">print</span><span class="p">()</span>
 
-<span class="k">def</span> <span class="nf">for_loop</span><span class="p">():</span>
+<span class="k">def</span> <span class="nf">for_loop</span><span class="p">():</span> <span class="c1"># I used the for_loop method to display my list</span>
     <span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">InfoDb</span><span class="p">:</span>
         <span class="n">print_data</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
 
