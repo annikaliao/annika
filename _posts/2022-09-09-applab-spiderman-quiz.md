@@ -5,8 +5,6 @@ description: Making a quiz with App Lab
 categories: [markdown]
 title: Spider-Man Quiz (App Lab)
 ---
-# Spider-Man Quiz
->My App Lab Quiz!
 
 ## Brainstorming Process
 
