@@ -1,5 +1,5 @@
 ---
-toc: true
+toc: false
 layout: post
 description: Experimenting with web page layout with Jekyll
 categories: [markdown]
