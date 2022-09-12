@@ -15,12 +15,11 @@ title: Work
         <td>
             3
         </td>
-        <td>
-            N/A
+        <td> 
+            <br>
+            <a href="https://annikaliao.github.io/annika/jupyter/2022/09/11/creative-development-outline.html">Performance Task Outline</a>
         </td>
         <td>
-            <a href="">Performance Task Scrum Board</a>
-            <br>
             <a href="https://annikaliao.github.io/annika/markdown/2022/09/09/applab-spiderman-quiz.html">Spider-Man Quiz (App Lab)</a>
         </td>
     </tr>
