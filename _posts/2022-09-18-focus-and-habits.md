@@ -19,37 +19,37 @@ title: Focus and Habits
 - We can control our well-being more than we think; we are not stuck like we tend to think
 - Our happiness is 50% genetic, which means there is 50% of our happiness that we can improve ourselves
 2. Circumstances don't matter nearly as much as we think
-- - What we think will make us happy will not make us as happy as we think (e.g. lottery winners 6 months later still feel the same as everyone else, not happier)
-- - What we think has ruined our lives will only help us live our lives to the fullest
-- - Our intentional effort to help our happiness matters much more than our circumstance
+- What we think will make us happy will not make us as happy as we think (e.g. lottery winners 6 months later still feel the same as everyone else, not happier)
+- What we think has ruined our lives will only help us live our lives to the fullest
+- Our intentional effort to help our happiness matters much more than our circumstance
 3. Taking control will take effort
-- - Research says if you want to achieve happiness, you must put in effort and commitment every single day
-- - You will have to work to make permanent changes consistently
-- - Just knowing will not work unless you put that knowledge into practice
+- Research says if you want to achieve happiness, you must put in effort and commitment every single day
+- You will have to work to make permanent changes consistently
+- Just knowing will not work unless you put that knowledge into practice
 4. Recognize what intuitions don't work
-- - Your mind is lying to you a lot of the time about what it means to be happy (e.g. salary)
-- - We change our lives to priortize things such as money and material goods, but that will not make us happier, and you will never really feel satisfied with how much you have
-- - People who constantly seek out materialistic aspirations are statistically more likely to have a lower well-being than others
+- Your mind is lying to you a lot of the time about what it means to be happy (e.g. salary)
+- We change our lives to priortize things such as money and material goods, but that will not make us happier, and you will never really feel satisfied with how much you have
+- People who constantly seek out materialistic aspirations are statistically more likely to have a lower well-being than others
 5. Make time for social connection
-- - Happier people spend more time with people they care about and less time alone
-- - Even talking and connecting with strangers can make you happier
-- - Connecting with anyone at all will bump up your well-being more than you would expect
+- Happier people spend more time with people they care about and less time alone
+- Even talking and connecting with strangers can make you happier
+- Connecting with anyone at all will bump up your well-being more than you would expect
 6. Helping others helps us 
-- - Spending time and money, no matter how much, on others will make you significantly more happy than if you spent it on yourself
+- Spending time and money, no matter how much, on others will make you significantly more happy than if you spent it on yourself
 7. Make time for gratitude
-- - Thinking about things we're grateful for is powerful
-- - Think less about the hassles and more about the benefits
-- - Express your gratitude to the people you're grateful for, this positively impacts both you and them
+- Thinking about things we're grateful for is powerful
+- Think less about the hassles and more about the benefits
+- Express your gratitude to the people you're grateful for, this positively impacts both you and them
 8. Healthy practices matter a lot more than we think
-- - Healthy practices include simple things like exercise and sleep
-- - Exercise boosts your mood for 24 hours
-- - Not sleeping can lower your well-being into depression-like moods
+- Healthy practices include simple things like exercise and sleep
+- Exercise boosts your mood for 24 hours
+- Not sleeping can lower your well-being into depression-like moods
 9. Take time to be in the present moment
-- - Ground yourself from time to time
-- - Being in the present is better for your well-being than your mind wandering to anything, from negative to positive
+- Ground yourself from time to time
+- Being in the present is better for your well-being than your mind wandering to anything, from negative to positive
 10. Be wealthy in time
-- - Time affluence vs. time famine
-- - Prioritizng time over money increases well-being
+- Time affluence vs. time famine
+- Prioritizng time over money increases well-being
 
 ## Note of Gratitude 
 
