@@ -1,7 +1,7 @@
 ---
 toc: false
 layout: post
-categories: [markdown] [notes] [week1]
+categories: [markdown][notes][week1]
 title: Honors Humanities Notes
 ---
 

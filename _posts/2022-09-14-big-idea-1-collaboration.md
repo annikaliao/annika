@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: Notes on collaboration
-categories: [markdown] [notes] [week4]
+categories: [markdown][notes][week4]
 title: 1.1 Collaboration
 ---
 # Collaboration Notes

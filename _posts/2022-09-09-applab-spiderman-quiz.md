@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: Making a quiz with App Lab
-categories: [markdown] 
+categories: [markdown][task][week3]
 title: Spider-Man Quiz (App Lab)
 ---
 
