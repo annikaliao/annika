@@ -11,9 +11,9 @@ title: Focus and Habits
 - Students in schools and colleges all over are too stressed and overwhelmed to be able to take care of themselves and do things they love
 - Statistics show that college students as a whole are commonly and increasingly feeling more and more depressed, mostly thanks to workload
 - Along with science of positive psychology, science of behavior change can help us improve and be happier as well (practice of good life)
+- We must change the culture of stress everywhere
 
-- **Insights from the "Psychology and the Good Life" course**
-
+**Insights from the "Psychology and the Good Life" course**
 1. This enterprise is possible
 - We can control our well-being more than we think; we are not stuck like we tend to think
 - Our happiness is 50% genetic, which means there is 50% of our happiness that we can improve ourselves
