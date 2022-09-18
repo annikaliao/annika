@@ -2,7 +2,7 @@
 toc: false
 layout: post
 description: Experimenting with web page layout with Jekyll
-categories: [markdown][task][week2]
+categories: [markdown]
 title: Remote Theme Change
 ---
 

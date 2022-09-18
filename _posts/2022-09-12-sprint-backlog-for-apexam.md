@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: How I will do my best in APCSP
-categories: [markdown][notes][week3]
+categories: [markdown]
 title: Sprint Backlog for APCSP
 ---
 
