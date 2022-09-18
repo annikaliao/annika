@@ -17,6 +17,8 @@ title: Work
         </td>
         <td> 
             <a href="https://annikaliao.github.io/annika/markdown/2022/09/14/big-idea-1-collaboration.html">1.1 Collaboration</a>
+            <br>
+            <a href="https://annikaliao.github.io/annika/markdown/2022/09/18/focus-and-habits.html">Focus and Habits</a>
         </td>
         <td>
 
