@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: Python terms I have learned 
-categories: [markdown]
+categories: [markdown] [notes] [week2]
 title: Python Vocab
 ---
 # Python Vocab 
