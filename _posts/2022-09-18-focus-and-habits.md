@@ -14,6 +14,7 @@ title: Focus and Habits
 - We must change the culture of stress everywhere
 
 - **Insights from the "Psychology and the Good Life" course**
+
 1. This enterprise is possible
 - - We can control our well-being more than we think; we are not stuck like we tend to think
 - - Our happiness is 50% genetic, which means there is 50% of our happiness that we can improve ourselves
@@ -55,6 +56,7 @@ title: Focus and Habits
 I shared a few words of gratitude to my sister, Naomi. She is moving to Irvine for college tomorrow, and after the video, I thought there is no better time than now to share my gratitude. Naomi and I are not usually sentimental with each other, so I thought it'd be awkward, but she listened with a kind demeanor. I told her how grateful I am for her and what she does for me and others, and that I will miss her an impossible much when she goes back to college. She responded with kind words as well, she told me how grateful she is for me, and that she will miss me too. I do think this experience has increased my well-being, even if just a little.
 
 ## Gratitude List
+
 - My family
 - My friends
 - Nourishing food everyday
@@ -72,6 +74,7 @@ I shared a few words of gratitude to my sister, Naomi. She is moving to Irvine f
 - The internet
 
 ## Goals
+
 - Sleep at least 6 hours a night
 - - Recently, I haven't had the best sleeping habits, but I haven't made that much of an effort to fix it. I know these habits are wrong, and I know that I will have to commit and take charge of the issue for something to happen. 
 - Change up my workload schedule
