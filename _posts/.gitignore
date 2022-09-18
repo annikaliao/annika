@@ -1,1 +1,19 @@
-
+# Ignore from local build
+settings.ini
+Gemfile.lock
+images/copied_from_nb/my_icons/fastai_logo.png
+_posts/2020-01-14-test-markdown-post.md
+_posts/2020-02-20-test.md
+_posts/2022-08-26-Bash.md
+_posts/2022-08-26-my-first-post.md
+_posts/2022-08-29-intro-to-python.md
+_posts/2022-08-29-other-class-notes.md
+_posts/2022-08-29-post.md
+_posts/2022-08-29-python-vocab.md
+_posts/2022-08-30-Python-Notes.md
+_posts/2022-09-01-python-list.md
+_posts/2022-09-02-remote-theme-change.md
+_posts/2022-09-09-applab-spiderman-quiz.md
+_posts/2022-09-11-creative-development-outline.md
+_posts/2022-09-12-sprint-backlog-for-apexam.md
+_posts/2022-09-14-big-idea-1-collaboration.md
