@@ -3,7 +3,7 @@ keywords: fastai
 description: Exploring lists
 title: Python List
 toc: false
-categories: [jupyter]
+categories: [jupyter] 
 tags: [python]
 nb_path: _notebooks/2022-09-01-python-list.ipynb
 layout: notebook
