@@ -1,7 +1,7 @@
 ---
 toc: true
 layout: post
-description: How I will do my best in APCSP
+description: Notes on Daily Video 1 and responses to the Hacks questions
 categories: [markdown]
-title: Sprint Backlog for APCSP
+title: "Big Idea 1: Collaboration"
 ---
