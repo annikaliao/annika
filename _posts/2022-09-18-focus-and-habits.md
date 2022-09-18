@@ -75,10 +75,10 @@ I shared a few words of gratitude to my sister, Naomi. She is moving to Irvine f
 ## Goals
 
 - Sleep at least 6 hours a night
-- - Recently, I haven't had the best sleeping habits, but I haven't made that much of an effort to fix it. I know these habits are wrong, and I know that I will have to commit and take charge of the issue for something to happen. 
+    - Recently, I haven't had the best sleeping habits, but I haven't made that much of an effort to fix it. I know these habits are wrong, and I know that I will have to commit and take charge of the issue for something to happen. 
 - Change up my workload schedule
-- - I also do not have the best habits in doing homework and studying, so I will need to put that into work. I will stop procrastinating and be more productive each day. This will also be good for having time affluence.
+    - I also do not have the best habits in doing homework and studying, so I will need to put that into work. I will stop procrastinating and be more productive each day. This will also be good for having time affluence.
 - Exercise more
-- - Another things Laurie Santos mentione din her video is that even 30 minutes of cardio each day will increase both your mental and physical well-being immensely. So, I will make sure I exercise more to stay happier.
+    - Another things Laurie Santos mentione din her video is that even 30 minutes of cardio each day will increase both your mental and physical well-being immensely. So, I will make sure I exercise more to stay happier.
 - Do something that makes me happy everyday
-- - Even as I plan to work more productively everyday, I will still have to take some time for myself each day. Whether it's just chilling and listening to music, sketching, or taking a bath, I will make sure I have something to enjoy everyday. 
+    - Even as I plan to work more productively everyday, I will still have to take some time for myself each day. Whether it's just chilling and listening to music, sketching, or taking a bath, I will make sure I have something to enjoy everyday. 
