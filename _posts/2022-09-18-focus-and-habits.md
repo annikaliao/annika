@@ -16,8 +16,8 @@ title: Focus and Habits
 - **Insights from the "Psychology and the Good Life" course**
 
 1. This enterprise is possible
-- - We can control our well-being more than we think; we are not stuck like we tend to think
-- - Our happiness is 50% genetic, which means there is 50% of our happiness that we can improve ourselves
+- We can control our well-being more than we think; we are not stuck like we tend to think
+- Our happiness is 50% genetic, which means there is 50% of our happiness that we can improve ourselves
 2. Circumstances don't matter nearly as much as we think
 - - What we think will make us happy will not make us as happy as we think (e.g. lottery winners 6 months later still feel the same as everyone else, not happier)
 - - What we think has ruined our lives will only help us live our lives to the fullest
