@@ -24,6 +24,33 @@ title: 1.1 Collaboration
 - "If you want to go fast, go alone if you want to go far, go together." - African Proverb
 - We will need to collaborate on projects in school, but there are times we will work alone. Even then, make sure to keep communicating with peers.
 
+## 1.2 Daily Video
+> Objectives: 
+> - Explain how computing innovations are improved through collaboration
+> - Explain how computing innovations are developed by groups of people
+
+### How to Collaborate in Class
+- Consulting with users is important to gather diverse perspectives and feedback!
+- Pair Programming
+    - Two programmers work together as a pair
+    - The "driver" writes program code, the "observer, pointer, or navigator" reviews each line as it is typed in
+    - Don't be a back-seat programmer! Just be the second pair of eyes
+- Think-Pair-Share
+    - Students think through a problem alone, pair with a partner to share ideas, then share results with the class
+    - Keeps independence in thoughts about problem, collaborate different thoughts at end!
+- Leave comments in code
+    - Communicate to your group
+    - Communicate to yourself
+    - Acknowledge code segments used from other sources
+    - Acknowledge media used from other sources
+    - Differentiate what you and your group did
+    - Clarify the functionality of your code
+- Online tools: 
+    - repl.it as a multiplayer resource
+    - GitHub as collaboration in a repository
+    - Shared document or folder
+    - Ask for feedback!
+
 ## MCQ
 ![]({{ site.baseurl }}/images/collaborationquizresults.png)
 
