@@ -5,8 +5,6 @@ description: Notes on collaboration
 categories: [markdown]
 title: 1.1 Collaboration
 ---
-# Collaboration Notes
-
 ## 1.1 Daily Video
 > Objectives: 
 > - Explain how computing innovations are improved through collaboration

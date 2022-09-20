@@ -21,7 +21,8 @@ title: Work
             <a href="https://annikaliao.github.io/annika/markdown/2022/09/18/focus-and-habits.html">Focus and Habits</a>
         </td>
         <td>
-
+            Flask/Python Web Application
+            Fastpages Local Server
         </td>
     </tr>
    
