@@ -2,11 +2,11 @@
   
     
         "post0": {
-            "title": "Title",
-            "content": "function Person(name, FavSong, FavArtist) { this.name = name; this.FavSong = FavSong; this.FavArtist = FavArtist; this.role = &quot;&quot;; } // define a setter for role in Person data Person.prototype.setRole = function(role) { this.role = role; } // define a JSON conversion &quot;method&quot; associated with Person Person.prototype.toJSON = function() { const obj = {name: this.name, FavSong: this.FavSong, FavArtist: this.FavArtist, role: this.role}; const json = JSON.stringify(obj); return json; } // make a new Person and assign to variable teacher var teacher = new Person(&quot;Mr M&quot;, &quot;jm1021&quot;, 1977); // object type is easy to work with in JavaScript logItType(teacher); // before role logItType(teacher.toJSON()); // ok to do this even though role is not yet defined // output of Object and JSON/string associated with Teacher teacher.setRole(&quot;Teacher&quot;); // set the role logItType(teacher); logItType(teacher.toJSON()); .",
-            "url": "https://annikaliao.github.io/annika/2022/09/22/java-table.html",
-            "relUrl": "/2022/09/22/java-table.html",
-            "date": " • Sep 22, 2022"
+            "title": "Java Table",
+            "content": "What Time Is It? . Click me to display Date and Time. . .",
+            "url": "https://annikaliao.github.io/annika/2022/09/25/java-table.html",
+            "relUrl": "/2022/09/25/java-table.html",
+            "date": " • Sep 25, 2022"
         }
         
     
