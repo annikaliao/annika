@@ -1,3 +1,11 @@
+---
+toc: true
+layout: post
+description: Exploring Java
+categories: [markdown]
+title: Java Program
+---
+
 <html>
 <body>
 
