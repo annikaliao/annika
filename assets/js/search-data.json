@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Java Usage",
-            "content": "Navigation Bar | Java Program | | . Coding of Navigation Bar . This table was made from Java and HTML. I made this file under include so that I’m able to implement it into whatever other file I need it in. . Coding of Java Program . This program gathers the data of what day and time it is and displays to the user upon click. I used commands such as “document.getElementById” and “onclick”. .",
+            "content": "Navigation Bar | Java Program | Java Program | . Coding of Navigation Bar . This table was made from Java and HTML. I made this file under include so that I’m able to implement it into whatever other file I need it in. . Coding of Java Program . This program gathers the data of what day and time it is and displays to the user upon click. I used commands such as “document.getElementById” and “onclick”. .",
             "url": "https://annikaliao.github.io/annika/java/2022/09/25/java-usage.html",
             "relUrl": "/java/2022/09/25/java-usage.html",
             "date": " • Sep 25, 2022"
@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "Java Program",
-            "content": "Navigation Bar | Java Program | | . What Time Is It? . Click to display Date and Time. . .",
+            "content": "Navigation Bar | Java Program | Java Program | . What Time Is It? . Click to display Date and Time. . .",
             "url": "https://annikaliao.github.io/annika/java/2022/09/25/java-table.html",
             "relUrl": "/java/2022/09/25/java-table.html",
             "date": " • Sep 25, 2022"
