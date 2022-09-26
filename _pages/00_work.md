@@ -13,6 +13,20 @@ title: Work
 
     <tr>
         <td>
+            5
+        </td>
+        <td> 
+            <a href="https://annikaliao.github.io/annika/markdown/2022/09/14/big-idea-1-collaboration.html">1.2 Program Purpose</a>
+            <br>
+            <a href="https://annikaliao.github.io/annika/java/2022/09/25/java-usage.html">Java Usage</a>
+        </td>
+        <td>
+            <a href="https://annikaliao.github.io/annika/java/2022/09/25/java-table.html">Java Program</a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
             4
         </td>
         <td> 
@@ -22,6 +36,7 @@ title: Work
         </td>
         <td>
             Flask/Python Web Application
+            <br>
             Fastpages Local Server
         </td>
     </tr>
