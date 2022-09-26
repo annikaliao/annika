@@ -6,6 +6,8 @@ categories: [java]
 title: Java Program
 ---
 
+{% include navbar.html %}
+
 <html>
 <body>
 
