@@ -2,10 +2,10 @@
   
     
         "post0": {
-            "title": "Title",
+            "title": "API Exploration",
             "content": "import requests url = &quot;https://love-calculator.p.rapidapi.com/getPercentage&quot; querystring = {&quot;sname&quot;:&quot;Annika Liao&quot;,&quot;fname&quot;:&quot;Alex Turner&quot;} headers = { &quot;X-RapidAPI-Key&quot;: &quot;26fd9549c8msh64e7e2f5ac3301fp18259djsn17ca48c66a6a&quot;, &quot;X-RapidAPI-Host&quot;: &quot;love-calculator.p.rapidapi.com&quot; } response = requests.request(&quot;GET&quot;, url, headers=headers, params=querystring) print(response.text) . {&#34;fname&#34;:&#34;Alex Turner&#34;,&#34;sname&#34;:&#34;Annika Liao&#34;,&#34;percentage&#34;:&#34;99&#34;,&#34;result&#34;:&#34;Congratulations! Good choice&#34;} .",
-            "url": "https://annikaliao.github.io/annika/2022/10/06/pythonapi.html",
-            "relUrl": "/2022/10/06/pythonapi.html",
+            "url": "https://annikaliao.github.io/annika/jupyter/2022/10/06/pythonapi.html",
+            "relUrl": "/jupyter/2022/10/06/pythonapi.html",
             "date": " • Oct 6, 2022"
         }
         
