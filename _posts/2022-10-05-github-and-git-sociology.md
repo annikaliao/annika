@@ -18,7 +18,7 @@ title: GitHub and Git Sociology
 
 
 **Have you established Issues as part of your Development process?**
-- Yes, we are creating Issues for various steps of our Development process to track our progress, and plan out the next steps. 
+Yes, we are creating Issues for various steps of our Development process to track our progress, and plan out the next steps. 
 
 **Have you considered making Pull Requests to track development?**
  
@@ -27,4 +27,4 @@ title: GitHub and Git Sociology
 
 
 **Are you managing Issues on a Project Board/Scrum Board like Kanban?**
-- Yes, we plan to consistently manage a [Scrum Board](https://github.com/users/haeryny/projects/1/views/1) with Issues documenting what we've done, what is in progress, and what is completed. This will help us keep our Development process running smoothly and efficiently. 
+Yes, we plan to consistently manage a [Scrum Board](https://github.com/users/haeryny/projects/1/views/1) with Issues documenting what we've done, what is in progress, and what is completed. This will help us keep our Development process running smoothly and efficiently. 
