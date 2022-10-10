@@ -11,8 +11,8 @@ categories: [java]
 <table>
   <thead>
   <tr>
-    <th>Name</th>
-    <th>ID</th>
+    <th>Names</th>
+    <th>Percentage</th>
   </tr>
   </thead>
   <tbody id="result">
@@ -25,7 +25,7 @@ categories: [java]
   const resultContainer = document.getElementById("result");
 
   // prepare fetch options
-  const url = "https://csp.nighthawkcodingsociety.com/crud_api/read/";
+  const url = "https://love-calculator.p.rapidapi.com/getPercentage";
   const options = {
     method: 'GET', // *GET, POST, PUT, DELETE, etc.
     mode: 'cors', // no-cors, *cors, same-origin
