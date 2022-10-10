@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Fetch of Love Calculator data",
-            "content": "Data Navigation Bar | Covid19 API | . Name ID .",
+            "content": "Data Navigation Bar | Covid19 API | . Names Percentage .",
             "url": "https://annikaliao.github.io/annika/data/lovecalc",
             "relUrl": "/data/lovecalc",
             "date": " • Oct 10, 2022"
@@ -13,7 +13,7 @@
   
     
         ,"post1": {
-            "title": "Fetch of Covid19 data with RapidAPI",
+            "title": "Fetch of Covid19 data",
             "content": "Data Navigation Bar | Covid19 API | . Time All-time Cases Recorded Deaths Active Cases . | | | | Country All-time Cases Recorded Deaths Active Cases .",
             "url": "https://annikaliao.github.io/annika/data/covid",
             "relUrl": "/data/covid",
