@@ -14,7 +14,12 @@ Our presentation was at 6:30 pm, and we were in classroom A151. We presented to 
 
 After our presentation, me and my group toured the fine arts section. We looked at the work of AP Studio Art, 3D Animation, Ceramics, and Digital Media. Haeryn, one of our group members, had work displayed for AP Studio Art, so we were very enthusiastic about seeing that:
 
-![]({{ site.baseurl }}/images/haerynsartwork.png
+![]({{ site.baseurl }}/images/haerynsartwork.png)
+
+Here is some of the other art we viewed:
+
+![]({{ site.baseurl }}/images/artnatm.jpg)
+![]({{ site.baseurl }}/images/ceramicsnatm.png)
 
 I really enjoyed seeing all the different forms and expressions of art. 
 
