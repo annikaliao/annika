@@ -63,7 +63,7 @@ tags: [html, liquid, javascript]
     const BITS = {{ BITS }};
     const MAX = 2 ** BITS - 1;
     const MSG_ON = "+";
-    const IMAGE_ON = "{{site.baseurl}}/images/redon.png";
+    const IMAGE_ON = "{{site.baseurl}}/images/blackcircle.png";
     const MSG_OFF = "-";
     const IMAGE_OFF = "{{site.baseurl}}/images/coloroff.png"
 
@@ -154,7 +154,7 @@ tags: [html, liquid, javascript]
 
     function changeColor(binary) {
         let R = parseInt(binary, 2);
-        var colval = "rgb(" + R + ", 80, 80)"
+        var colval = "rgb(" + R + ", " + R + ", " + R + ")"
         document.getElementById("color").style.background = colval;
 
     }
