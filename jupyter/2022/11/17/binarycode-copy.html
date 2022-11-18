@@ -4,23 +4,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Binary Math | ANNIKA</title>
+<title>Binary Colors | ANNIKA</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Binary Math" />
+<meta property="og:title" content="Binary Colors" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="A Binary Math illustrative application using HTML, Liquid, and JavaScript." />
-<meta property="og:description" content="A Binary Math illustrative application using HTML, Liquid, and JavaScript." />
-<link rel="canonical" href="https://annikaliao.github.io/annika/jupyter/2022/11/17/binarycode.html" />
-<meta property="og:url" content="https://annikaliao.github.io/annika/jupyter/2022/11/17/binarycode.html" />
+<meta name="description" content="Binary math application using HTML, Liquid, and JavaScript" />
+<meta property="og:description" content="Binary math application using HTML, Liquid, and JavaScript" />
+<link rel="canonical" href="https://annikaliao.github.io/annika/jupyter/2022/11/17/binarycode-copy.html" />
+<meta property="og:url" content="https://annikaliao.github.io/annika/jupyter/2022/11/17/binarycode-copy.html" />
 <meta property="og:site_name" content="ANNIKA" />
 <meta property="og:image" content="https://annikaliao.github.io/annika/images/binary.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-11-17T00:00:00-06:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://annikaliao.github.io/annika/images/binary.png" />
-<meta property="twitter:title" content="Binary Math" />
+<meta property="twitter:title" content="Binary Colors" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-11-17T00:00:00-06:00","datePublished":"2022-11-17T00:00:00-06:00","description":"A Binary Math illustrative application using HTML, Liquid, and JavaScript.","headline":"Binary Math","image":"https://annikaliao.github.io/annika/images/binary.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://annikaliao.github.io/annika/jupyter/2022/11/17/binarycode.html"},"url":"https://annikaliao.github.io/annika/jupyter/2022/11/17/binarycode.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-11-17T00:00:00-06:00","datePublished":"2022-11-17T00:00:00-06:00","description":"Binary math application using HTML, Liquid, and JavaScript","headline":"Binary Colors","image":"https://annikaliao.github.io/annika/images/binary.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://annikaliao.github.io/annika/jupyter/2022/11/17/binarycode-copy.html"},"url":"https://annikaliao.github.io/annika/jupyter/2022/11/17/binarycode-copy.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/annika/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://annikaliao.github.io/annika/feed.xml" title="ANNIKA" /><link rel="shortcut icon" type="image/x-icon" href="/annika/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -78,29 +78,22 @@ window.onload = wrap_img;
 
 <div class="container bg-primary">
     <header class="pb-3 mb-4 border-bottom border-primary text-dark">
-        <span class="fs-4">Binary Math with Conversions</span>
+        <span class="fs-4">Binary Math: Colors</span>
     </header>
     <div class="row justify-content-md-center">
         <div class="col-8">
             <table class="table">
             <tr id="table">
-                <th>Plus</th>
                 <th>Binary</th>
                 <th>Octal</th>
                 <th>Hexadecimal</th>
-                <th>Decimal</th>
-                <th>Minus</th>
             </tr>
             <tr>
-                <td><button type="button" id="add1" onclick="add(1)">+1</button></td>
                 <td id="binary">00000000</td>
                 <td id="octal">0</td>
                 <td id="hexadecimal">0</td>
-                <td id="decimal">0</td>
-                <td><button type="button" id="sub1" onclick="add(-1)">-1</button></td>
             </tr>
             </table>
-            <h2 id="color">This is the color</h2>
         </div>
         <div class="col-12">
             
@@ -109,36 +102,36 @@ window.onload = wrap_img;
             <tr>
                 
                 
-                <td><img class="img-responsive py-3" id="bulb0" src="/annika/images/bulb_off.png" alt="" width="40" height="Auto" />
-                    <button type="button" id="butt0" onclick="javascript:toggleBit(0)">Turn on</button>
+                <td><img class="img-responsive py-3" id="bulb0" src="/annika/images/coloroff.png" alt="" width="40" height="Auto" />
+                    <button type="button" id="butt0" onclick="javascript:toggleBit(0)">+</button>
                 </td>
                 
-                <td><img class="img-responsive py-3" id="bulb1" src="/annika/images/bulb_off.png" alt="" width="40" height="Auto" />
-                    <button type="button" id="butt1" onclick="javascript:toggleBit(1)">Turn on</button>
+                <td><img class="img-responsive py-3" id="bulb1" src="/annika/images/coloroff.png" alt="" width="40" height="Auto" />
+                    <button type="button" id="butt1" onclick="javascript:toggleBit(1)">+</button>
                 </td>
                 
-                <td><img class="img-responsive py-3" id="bulb2" src="/annika/images/bulb_off.png" alt="" width="40" height="Auto" />
-                    <button type="button" id="butt2" onclick="javascript:toggleBit(2)">Turn on</button>
+                <td><img class="img-responsive py-3" id="bulb2" src="/annika/images/coloroff.png" alt="" width="40" height="Auto" />
+                    <button type="button" id="butt2" onclick="javascript:toggleBit(2)">+</button>
                 </td>
                 
-                <td><img class="img-responsive py-3" id="bulb3" src="/annika/images/bulb_off.png" alt="" width="40" height="Auto" />
-                    <button type="button" id="butt3" onclick="javascript:toggleBit(3)">Turn on</button>
+                <td><img class="img-responsive py-3" id="bulb3" src="/annika/images/coloroff.png" alt="" width="40" height="Auto" />
+                    <button type="button" id="butt3" onclick="javascript:toggleBit(3)">+</button>
                 </td>
                 
-                <td><img class="img-responsive py-3" id="bulb4" src="/annika/images/bulb_off.png" alt="" width="40" height="Auto" />
-                    <button type="button" id="butt4" onclick="javascript:toggleBit(4)">Turn on</button>
+                <td><img class="img-responsive py-3" id="bulb4" src="/annika/images/coloroff.png" alt="" width="40" height="Auto" />
+                    <button type="button" id="butt4" onclick="javascript:toggleBit(4)">+</button>
                 </td>
                 
-                <td><img class="img-responsive py-3" id="bulb5" src="/annika/images/bulb_off.png" alt="" width="40" height="Auto" />
-                    <button type="button" id="butt5" onclick="javascript:toggleBit(5)">Turn on</button>
+                <td><img class="img-responsive py-3" id="bulb5" src="/annika/images/coloroff.png" alt="" width="40" height="Auto" />
+                    <button type="button" id="butt5" onclick="javascript:toggleBit(5)">+</button>
                 </td>
                 
-                <td><img class="img-responsive py-3" id="bulb6" src="/annika/images/bulb_off.png" alt="" width="40" height="Auto" />
-                    <button type="button" id="butt6" onclick="javascript:toggleBit(6)">Turn on</button>
+                <td><img class="img-responsive py-3" id="bulb6" src="/annika/images/coloroff.png" alt="" width="40" height="Auto" />
+                    <button type="button" id="butt6" onclick="javascript:toggleBit(6)">+</button>
                 </td>
                 
-                <td><img class="img-responsive py-3" id="bulb7" src="/annika/images/bulb_off.png" alt="" width="40" height="Auto" />
-                    <button type="button" id="butt7" onclick="javascript:toggleBit(7)">Turn on</button>
+                <td><img class="img-responsive py-3" id="bulb7" src="/annika/images/coloroff.png" alt="" width="40" height="Auto" />
+                    <button type="button" id="butt7" onclick="javascript:toggleBit(7)">+</button>
                 </td>
                 
             </tr>
@@ -161,8 +154,12 @@ window.onload = wrap_img;
                 
                 <td><input type="text" id="digit7" value="0" size="1" readonly="" /></td>
                 
+                <td><b>Decimal Value:</b></td>
+                <td id="decimal">0</td>
             </tr>
             </table>
+        <div class="colorbox">
+            <h1 style="border:black; border-width:5px; border-style:solid;" id="color">.</h1>
         </div>
     </div>
 </div>
@@ -170,10 +167,10 @@ window.onload = wrap_img;
 <script>
     const BITS = 8;
     const MAX = 2 ** BITS - 1;
-    const MSG_ON = "Turn on";
-    const IMAGE_ON = "/annika/images/bulb_on.gif";
-    const MSG_OFF = "Turn off";
-    const IMAGE_OFF = "/annika/images/bulb_off.png"
+    const MSG_ON = "+";
+    const IMAGE_ON = "/annika/images/redon.png";
+    const MSG_OFF = "-";
+    const IMAGE_OFF = "/annika/images/coloroff.png"
 
     // return string with current value of each bit
     function getBits() {
@@ -262,12 +259,12 @@ window.onload = wrap_img;
 
     function changeColor(binary) {
         let R = parseInt(binary, 2);
-        var colval = "rgb(" + R + ", 10, 100)"
-        document.getElementById("color").style.color = colval;
+        var colval = "rgb(" + R + ", 80, 80)"
+        document.getElementById("color").style.background = colval;
 
     }
 </script>
-
+</div>
 
       </div>
     </main><footer class="site-footer h-card">
