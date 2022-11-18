@@ -1,7 +1,7 @@
 ---
 keywords: fastai
-description: Teaching Algorithms
-title: Algorithm Practice
+description: Algorithms for teaching
+title: Algorithm Examples
 toc: true 
 badges: true
 comments: false
@@ -19,6 +19,65 @@ layout: notebook
 
 <div class="container" id="notebook-container">
         
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Example-of-Selection-in-an-Algorithm">Example of Selection in an Algorithm<a class="anchor-link" href="#Example-of-Selection-in-an-Algorithm"> </a></h2><p>There is a sale with different discounts per tag:
+Red tag is 25% off
+Green tag is 60% off
+What is the cost of your item?</p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;What color tag does the item have?&quot;</span><span class="p">)</span>
+<span class="n">tag</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">tag</span> <span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;what is the cost of this item?&quot;</span><span class="p">)</span>
+    <span class="n">cost</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+    <span class="n">cost</span> <span class="o">=</span> <span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">cost</span><span class="p">)</span><span class="o">*</span><span class="mf">0.75</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">tag</span> <span class="o">==</span> <span class="s2">&quot;red&quot;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;what is the cost of this item?&quot;</span><span class="p">)</span>
+    <span class="n">cost</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+    <span class="n">cost</span> <span class="o">=</span> <span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">cost</span><span class="p">)</span><span class="o">*</span><span class="mf">0.4</span><span class="p">)</span>
+
+<span class="n">cost</span> <span class="o">=</span> <span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">cost</span><span class="p">)</span><span class="o">*</span><span class="mf">1.1</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">cost</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>What color tag does the item have?
+green
+what is the cost of this item?
+Total: 8.25
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -50,55 +109,6 @@ layout: notebook
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>2
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;What color tag does this item have?&quot;</span><span class="p">)</span>
-<span class="n">tag</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span>
-
-<span class="k">if</span> <span class="n">tag</span> <span class="o">==</span> <span class="s2">&quot;green&quot;</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;what is the cost of this item?&quot;</span><span class="p">)</span>
-    <span class="n">cost</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
-    <span class="n">cost</span> <span class="o">=</span> <span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">cost</span><span class="p">)</span><span class="o">*</span><span class="mf">0.75</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">tag</span> <span class="o">==</span> <span class="s2">&quot;red&quot;</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;what is the cost of this item?&quot;</span><span class="p">)</span>
-    <span class="n">cost</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
-    <span class="n">cost</span> <span class="o">=</span> <span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">cost</span><span class="p">)</span><span class="o">*</span><span class="mf">0.4</span><span class="p">)</span>
-
-<span class="n">cost</span> <span class="o">=</span> <span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">cost</span><span class="p">)</span><span class="o">*</span><span class="mf">1.1</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">cost</span><span class="p">))</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>What color tag does this item have?
-red
-what is the cost of this item?
-Total: 4.4
 </pre>
 </div>
 </div>
