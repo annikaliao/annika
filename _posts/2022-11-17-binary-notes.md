@@ -1,5 +1,9 @@
 ---
-
+toc: true
+layout: post
+description: Notes
+categories: [markdown] 
+title: Cumulative Trimester 2 Notes
 ---
 
 - Meta data: "data about data"
