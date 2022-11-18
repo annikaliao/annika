@@ -6,6 +6,7 @@ categories: [markdown]
 title: Cumulative Trimester 2 Notes
 ---
 
+## Binary
 - Meta data: "data about data"
     - i.e. name of person
     - front matter
