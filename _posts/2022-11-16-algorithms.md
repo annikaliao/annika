@@ -21,10 +21,10 @@ layout: notebook
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Example-of-Selection-in-an-Algorithm">Example of Selection in an Algorithm<a class="anchor-link" href="#Example-of-Selection-in-an-Algorithm"> </a></h2><p>There is a sale with different discounts per tag:
-Red tag is 25% off
-Green tag is 60% off
-What is the cost of your item?</p>
+<h2 id="Example-of-Selection-in-an-Algorithm">Example of Selection in an Algorithm<a class="anchor-link" href="#Example-of-Selection-in-an-Algorithm"> </a></h2><p>There is a sale with different discounts per tag:</p>
+<p>Red tag is 25% off</p>
+<p>Green tag is 60% off</p>
+<p>What is the cost of your item?</p>
 
 </div>
 </div>
