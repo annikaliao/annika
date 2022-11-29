@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Lesson 3.1-3.2 | ANNIKA</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Lesson 3.1-3.2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Notes, questions, and hacks" />
+<meta property="og:description" content="Notes, questions, and hacks" />
+<link rel="canonical" href="https://annikaliao.github.io/annika/jupyter/2022/11/28/3.1-3.2.html" />
+<meta property="og:url" content="https://annikaliao.github.io/annika/jupyter/2022/11/28/3.1-3.2.html" />
+<meta property="og:site_name" content="ANNIKA" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-11-28T00:00:00-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Lesson 3.1-3.2" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-11-28T00:00:00-06:00","datePublished":"2022-11-28T00:00:00-06:00","description":"Notes, questions, and hacks","headline":"Lesson 3.1-3.2","mainEntityOfPage":{"@type":"WebPage","@id":"https://annikaliao.github.io/annika/jupyter/2022/11/28/3.1-3.2.html"},"url":"https://annikaliao.github.io/annika/jupyter/2022/11/28/3.1-3.2.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/annika/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://annikaliao.github.io/annika/feed.xml" title="ANNIKA" /><link rel="shortcut icon" type="image/x-icon" href="/annika/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/annika/">ANNIKA</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/annika/work">Work</a><a class="page-link" href="/annika/about/">About Me</a><a class="page-link" href="/annika/search/">Search</a><a class="page-link" href="/annika/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Lesson 3.1-3.2</h1><p class="page-description">Notes, questions, and hacks</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-11-28T00:00:00-06:00" itemprop="datePublished">
+        Nov 28, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      4 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/annika/categories/#jupyter">jupyter</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/annikaliao/annika/tree/master/_notebooks/2022-11-28-3.1-3.2.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/annika/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/annikaliao/annika/master?filepath=_notebooks%2F2022-11-28-3.1-3.2.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/annika/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/annikaliao/annika/blob/master/_notebooks/2022-11-28-3.1-3.2.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/annika/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Fannikaliao%2Fannika%2Fblob%2Fmaster%2F_notebooks%2F2022-11-28-3.1-3.2.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/annika/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#Notes">Notes </a></li>
+<li class="toc-entry toc-h2"><a href="#Hacks">Hacks </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="##1-Variable-Code">#1 Variable Code </a></li>
+<li class="toc-entry toc-h3"><a href="##2-Questions">#2 Questions </a></li>
+<li class="toc-entry toc-h3"><a href="##3-Questions">#3 Questions </a></li>
+<li class="toc-entry toc-h3"><a href="##4-List-index">#4 List index </a></li>
+<li class="toc-entry toc-h3"><a href="##5-Data-abstraction">#5 Data abstraction </a></li>
+<li class="toc-entry toc-h3"><a href="##6-Quiz">#6 Quiz </a></li>
+<li class="toc-entry toc-h3"><a href="##7-Simplify-the-list">#7 Simplify the list </a></li>
+<li class="toc-entry toc-h3"><a href="##8-Question">#8 Question </a></li>
+<li class="toc-entry toc-h3"><a href="##9-Managing-a-complex-list">#9 Managing a complex list </a></li>
+</ul>
+</li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-11-28-3.1-3.2.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Notes">
+<a class="anchor" href="#Notes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Notes<a class="anchor-link" href="#Notes"> </a>
+</h2>
+<ul>
+<li>A variable is an abstraction that holds values <ul>
+<li>The data in these values can be Booleans, numbers, lists, and strings</li>
+</ul>
+</li>
+<li>Strings are series of characters</li>
+<li>Integers are number values</li>
+<li>Booleans are true/false statements</li>
+<li>When choosing variables, it is important to assign the variables name to something that correlates with what the function of the variable is supposed to do</li>
+<li>An assignment operator stores a value inside a variable</li>
+<li>Lists are sequences of elements with each element being a variable<ul>
+<li>The elements within the list can be accessed by index</li>
+</ul>
+</li>
+<li>Indexes can efficiently print an item from the list</li>
+<li>Data abstraction can be created with lists<ul>
+<li>Lists bundle together multiple elements and/or variables under one name are not defined with specified lengths</li>
+</ul>
+</li>
+<li>Use square brackets “[]” to store the values of a certain variable, then you can simply print the variable to output your desired list</li>
+<li>Lists manage the complexity of a program by creating a more efficient and coherent code segment</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hacks">
+<a class="anchor" href="#Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks<a class="anchor-link" href="#Hacks"> </a>
+</h2>
+<h3 id="#1-Variable-Code">
+<a class="anchor" href="##1-Variable-Code" aria-hidden="true"><span class="octicon octicon-link"></span></a>#1 Variable Code<a class="anchor-link" href="##1-Variable-Code"> </a>
+</h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s2">"Annika"</span> <span class="c1"># this is a string variable</span>
+<span class="n">age</span> <span class="o">=</span> <span class="mi">15</span> <span class="c1"># this is an integer variable</span>
+<span class="n">city</span> <span class="o">=</span> <span class="s2">"San Diego"</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Hi, my name is "</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">". I am </span><span class="si">{</span><span class="n">age</span><span class="si">}</span><span class="s2">"</span> <span class="o">+</span> <span class="s2">", and I live in "</span> <span class="o">+</span> <span class="n">city</span><span class="p">)</span> 
+<span class="c1"># use f'...{}' to integrate an integer variable into the string</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hi, my name is Annika. I am 15, and I live in San Diego
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="#2-Questions">
+<a class="anchor" href="##2-Questions" aria-hidden="true"><span class="octicon octicon-link"></span></a>#2 Questions<a class="anchor-link" href="##2-Questions"> </a>
+</h3>
+<ol>
+<li>In your own words, briefly explain by writing down what an assignment operator is<ul>
+<li>An assignment operator is a symbol used to store a value inside a variable, such as an equal sign (=).</li>
+</ul>
+</li>
+<li>In Collegeboard pseudocode, what symbol is used to assign values to variables?<ul>
+<li>An arrow symbol (&lt;--). </li>
+</ul>
+</li>
+<li>A variable, x, is initially given a value of 15. Later on, the value for x is changed to 22. If you print x, would the command display 15 or 22?<ul>
+<li>22, because it comes after and therefore replaces it.</li>
+</ul>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="#3-Questions">
+<a class="anchor" href="##3-Questions" aria-hidden="true"><span class="octicon octicon-link"></span></a>#3 Questions<a class="anchor-link" href="##3-Questions"> </a>
+</h3>
+<ol>
+<li>What is a list?<ul>
+<li>A list is a sequence of elements, each of which is a variable.</li>
+</ul>
+</li>
+<li>What is an element?<ul>
+<li>An element is a single fragment of the code.</li>
+</ul>
+</li>
+<li>What is an easy way to reference the elements in a list or string?<ul>
+<li>An index can return the element of a list or string by the position it is at.</li>
+</ul>
+</li>
+<li>What is an example of a string?<ul>
+<li>A series of characters, i.e., a name, a phone number, or a phrase. </li>
+</ul>
+</li>
+</ol>
+<h3 id="#4-List-index">
+<a class="anchor" href="##4-List-index" aria-hidden="true"><span class="octicon octicon-link"></span></a>#4 List index<a class="anchor-link" href="##4-List-index"> </a>
+</h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">favFoods</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'udon'</span><span class="p">,</span> <span class="s1">'penne rosa'</span><span class="p">,</span> <span class="s1">'spam musubi'</span><span class="p">,</span> <span class="s1">'avocado toast'</span><span class="p">,</span> <span class="s1">'brownies'</span><span class="p">]</span> 
+<span class="c1"># this is a list of elements, all of which are string variables</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">favFoods</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span> <span class="c1"># this indexes and prints the third item of my list</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">favFoods</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">])</span> <span class="c1"># this indexes and prints the third from the end of my list </span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>['udon', 'penne rosa', 'spam musubi', 'avocado toast', 'brownies']
+avocado toast
+spam musubi
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="#5-Data-abstraction">
+<a class="anchor" href="##5-Data-abstraction" aria-hidden="true"><span class="octicon octicon-link"></span></a>#5 Data abstraction<a class="anchor-link" href="##5-Data-abstraction"> </a>
+</h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">num1</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Input a number. "</span><span class="p">)</span>
+<span class="n">num2</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Input a number. "</span><span class="p">)</span>
+<span class="n">num3</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Input a number. "</span><span class="p">)</span>
+<span class="n">add</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"How much would you like to add? "</span><span class="p">)</span>
+
+<span class="c1"># Add code in the space below</span>
+
+<span class="n">numlist</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">num1</span><span class="p">),</span> <span class="nb">int</span><span class="p">(</span><span class="n">num2</span><span class="p">),</span> <span class="nb">int</span><span class="p">(</span><span class="n">num3</span><span class="p">)]</span>
+
+<span class="c1"># The following is the code that adds the inputted addend to the other numbers. It is hidden from the user.</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">numlist</span><span class="p">:</span>
+    <span class="n">numlist</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+=</span> <span class="nb">int</span><span class="p">(</span><span class="n">add</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">numlist</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[3, 4, 5]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="#6-Quiz">
+<a class="anchor" href="##6-Quiz" aria-hidden="true"><span class="octicon octicon-link"></span></a>#6 Quiz<a class="anchor-link" href="##6-Quiz"> </a>
+</h3>
+<p><img src="https://mail.google.com/mail/u/0?ui=2&amp;ik=307c2bfad8&amp;attid=0.1&amp;permmsgid=msg-a:r4582493374494622745&amp;th=184c27275a351a09&amp;view=fimg&amp;fur=ip&amp;sz=s0-l75-ft&amp;attbid=ANGjdJ9N9qZ4_-1F_GgWrShyojfK25q38cTzSRS1LajPdIuJMXD-hSRA5D3tu1zGCtb0FzC2HLmP1hBwZydbm7LKdn3xARKXS7TtD0Kcq9_s5WY7TDxptADtstCf8uk&amp;disp=emb&amp;realattid=ii_lb1xz6480" alt="">
+I scored 2/3 on the quiz</p>
+<h3 id="#7-Simplify-the-list">
+<a class="anchor" href="##7-Simplify-the-list" aria-hidden="true"><span class="octicon octicon-link"></span></a>#7 Simplify the list<a class="anchor-link" href="##7-Simplify-the-list"> </a>
+</h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">food1</span> <span class="o">=</span> <span class="s2">"pizza"</span> 
+<span class="n">food2</span> <span class="o">=</span> <span class="s2">"hot dog"</span> 
+<span class="n">food3</span> <span class="o">=</span> <span class="s2">"sushi"</span>
+<span class="n">food4</span> <span class="o">=</span> <span class="s2">"strawberry"</span>
+<span class="n">food5</span> <span class="o">=</span> <span class="s2">"sandwich"</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">food1</span><span class="p">,</span> <span class="n">food2</span><span class="p">,</span> <span class="n">food3</span><span class="p">,</span> <span class="n">food4</span><span class="p">,</span> <span class="n">food5</span><span class="p">)</span>
+
+<span class="c1"># simplifying the list</span>
+<span class="n">food</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'pizza'</span><span class="p">,</span> <span class="s1">'hot dog'</span><span class="p">,</span> <span class="s1">'sushi'</span><span class="p">,</span> <span class="s1">'strawberry'</span><span class="p">,</span> <span class="s1">'sandwich'</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">food</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>pizza hot dog sushi strawberry sandwich
+['pizza', 'hot dog', 'sushi', 'strawberry', 'sandwich']
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="#8-Question">
+<a class="anchor" href="##8-Question" aria-hidden="true"><span class="octicon octicon-link"></span></a>#8 Question<a class="anchor-link" href="##8-Question"> </a>
+</h3>
+<p><strong>Why are using lists better for a program, rather than writing out each line of code?</strong></p>
+<ul>
+<li>Writing out each line of code for each variable is tedious and impractical. Using a list manages this complexity, creating a more efficient and coherent code segment. It also reduces the amount of variables used, simplifying the code and making it easier to work on. </li>
+</ul>
+<h3 id="#9-Managing-a-complex-list">
+<a class="anchor" href="##9-Managing-a-complex-list" aria-hidden="true"><span class="octicon octicon-link"></span></a>#9 Managing a complex list<a class="anchor-link" href="##9-Managing-a-complex-list"> </a>
+</h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">color1</span> <span class="o">=</span> <span class="s1">'red'</span>
+<span class="n">color2</span> <span class="o">=</span> <span class="s1">'orange'</span>
+<span class="n">color3</span> <span class="o">=</span> <span class="s1">'yellow'</span>
+<span class="n">color4</span> <span class="o">=</span> <span class="s1">'green'</span>
+<span class="n">color5</span> <span class="o">=</span> <span class="s1">'blue'</span>
+<span class="n">color6</span> <span class="o">=</span> <span class="s1">'purple'</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">color1</span><span class="p">,</span> <span class="n">color2</span><span class="p">,</span> <span class="n">color3</span><span class="p">,</span> <span class="n">color4</span><span class="p">,</span> <span class="n">color5</span><span class="p">,</span> <span class="n">color6</span><span class="p">)</span>
+<span class="c1"># this is the "long and slow way" to write out a list, with separate variables for each item</span>
+
+<span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'red'</span><span class="p">,</span> <span class="s1">'orange'</span><span class="p">,</span> <span class="s1">'yellow'</span><span class="p">,</span> <span class="s1">'green'</span><span class="p">,</span> <span class="s1">'blue'</span><span class="p">,</span> <span class="s1">'purple'</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">colors</span><span class="p">)</span>
+<span class="c1"># I have managed the complexity by placing the items all in one list</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>red orange yellow green blue purple
+['red', 'orange', 'yellow', 'green', 'blue', 'purple']
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><a class="u-url" href="/annika/jupyter/2022/11/28/3.1-3.2.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/annika/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/annika/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/annika/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Annika&#39;s APCSP blog!</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li>
+  <a rel="me" href="”https://github.com/nighthawkcoders“" target="_blank" title="github">
+    <svg class="svg-icon grey">
+      <use xlink:href="/annika/assets/minima-social-icons.svg#github"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="”https://twitter.com/NighthawkCoding“" target="_blank" title="twitter">
+    <svg class="svg-icon grey">
+      <use xlink:href="/annika/assets/minima-social-icons.svg#twitter"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="”https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q“" target="_blank" title="youtube">
+    <svg class="svg-icon grey">
+      <use xlink:href="/annika/assets/minima-social-icons.svg#youtube"></use>
+    </svg>
+  </a>
+</li>
+</ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
