@@ -1,7 +1,7 @@
 ---
 keywords: fastai
 description: Algorithms for teaching
-title: Algorithm Examples
+title: Algorithms
 toc: true 
 badges: true
 comments: false
