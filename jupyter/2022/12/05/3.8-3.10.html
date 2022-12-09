@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      3 min read
     
 </span></p>
 
@@ -128,6 +128,8 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#Hacks">Hacks </a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#Section-3.8.1">Section 3.8.1 </a></li>
+<li class="toc-entry toc-h3"><a href="#Section-3.8.2">Section 3.8.2 </a></li>
+<li class="toc-entry toc-h3"><a href="#3.10">3.10 </a></li>
 </ul>
 </li>
 </ul><!--
@@ -189,7 +191,241 @@ window.onload = wrap_img;
 <a class="anchor" href="#Section-3.8.1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Section 3.8.1<a class="anchor-link" href="#Section-3.8.1"> </a>
 </h3>
 <p>Iteration: part of an algorithm that is repeated until a certain condition is met</p>
-<p>1.</p>
+<p><img src="https://i.imgur.com/L3ZUnJb.png" alt=""></p>
+<ol>
+<li>Start</li>
+<li>The number of pretzels in the pack is 6</li>
+<li>Eat one fruit snack, number of pretzels in pack goes down by 1</li>
+<li>How many pretzels are left?</li>
+<li>Repeat step 3 until number of pretzels is 0</li>
+<li>Display that pack is empty</li>
+<li>Finish</li>
+</ol>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pretzel</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="k">while</span> <span class="p">(</span><span class="n">pretzel</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">):</span>
+    <span class="n">pretzel</span> <span class="o">-=</span> <span class="mi">1</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">pretzel</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">pretzel</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"All done!"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>5
+4
+3
+2
+1
+0
+All done!
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Section-3.8.2">
+<a class="anchor" href="#Section-3.8.2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Section 3.8.2<a class="anchor-link" href="#Section-3.8.2"> </a>
+</h3>
+<p>Iteration Statement: statements to be executed zero or more times, unless a stopping condition is met</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="k">break</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>5
+4
+3
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">number</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="k">while</span> <span class="n">number</span> <span class="o">&lt;=</span> <span class="mi">81</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
+    <span class="n">number</span> <span class="o">+=</span> <span class="mi">13</span>
+<span class="n">number</span> <span class="o">=</span> <span class="mi">0</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>3
+16
+29
+42
+55
+68
+81
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="3.10">
+<a class="anchor" href="#3.10" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.10<a class="anchor-link" href="#3.10"> </a>
+</h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">38</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mi">67</span><span class="p">,</span> <span class="mi">83</span><span class="p">,</span> <span class="mi">78</span><span class="p">]</span>
+
+<span class="nb">min</span> <span class="o">=</span> <span class="mi">40</span>
+
+<span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">num</span> <span class="o">&lt;</span> <span class="nb">min</span><span class="p">:</span>
+        <span class="nb">min</span> <span class="o">=</span> <span class="n">num</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">min</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>38
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>APCSP Reference Page Notes</strong></p>
+<ul>
+<li>PROCEDURE procName(parameter1, <br>
+parameter2, ...) <br>
+{ <br>
+&lt;# block of statements&gt; <br>
+}<ul>
+<li>procName: a procedure that takes zero or more arguments</li>
+<li>procedure procName can be called using "procName(arg1, arg2, ...)", where arg1 is assigned to parameter1, arg2 is assigned to parameter2, etc.
+<br><br>
+</li>
+</ul>
+</li>
+<li>PROCEDURE procName(parameter1, <br>
+parameter2, ...) <br>
+{ <br>
+&lt;# block of statements&gt; <br>
+RETURN(expression) <br>
+} <ul>
+<li>return statement may appear at any point inside the procedure and causes an immediate return from the procedure back to the calling statement.</li>
+<li>value returned by the procedure procName can be assigned to the variable result using "result ← procName(arg1, arg2, ...)"
+<br><br>
+</li>
+</ul>
+</li>
+<li>APPEND(aList, value) <ul>
+<li>length of aList is increased by 1, and value is placed at the end of aList
+<br><br>    </li>
+</ul>
+</li>
+<li>REPEAT UNTIL(condition) <br>
+{ <br>
+&lt;# block of statements&gt; <br>
+} <ul>
+<li>code is repeated until the Boolean condition evaluates to true</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://i.imgur.com/JR6bHdk.png" alt="Quiz Score"></p>
 
 </div>
 </div>
