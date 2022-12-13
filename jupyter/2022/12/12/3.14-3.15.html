@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -249,12 +249,34 @@ Hypotenuse is 5.0
 <p><strong>Import random function</strong> generates a value a completely random number within a range between two numbers.</p>
 <p>Other imports:</p>
 <ul>
-<li>import math</li>
-<li>import cmath</li>
-<li>import graphlib</li>
-<li>import matplotlib</li>
-<li>import (your own module with a .py file), as I will do below:</li>
+<li>math<ul>
+<li>gives access to math functions defined by the C standard</li>
 </ul>
+</li>
+<li>cmath<ul>
+<li>gives access to math functions for complex numbers</li>
+</ul>
+</li>
+<li>your own module <ul>
+<li>you can create your own library by storing in a .py file</li>
+</ul>
+</li>
+<li>NumPy<ul>
+<li>gives access to comprehensive math functions, random number generators, linear algebra routines, Fourier transforms, and more. Must be installed with pip install</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Lesson-3.15.2">
+<a class="anchor" href="#Lesson-3.15.2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lesson 3.15.2<a class="anchor-link" href="#Lesson-3.15.2"> </a>
+</h3>
+<p>There is a spinner divided into eight equal parts. 3 parts of the spinner are green, two parts are blue, one part is purple, one part is red, and one part is orange. How can you simulate this situation using a random number generator.</p>
 
 </div>
 </div>
@@ -266,10 +288,38 @@ Hypotenuse is 5.0
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">module</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<span class="n">spin</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">spin</span> <span class="o">&lt;=</span><span class="mi">3</span><span class="p">:</span>
+    <span class="n">spin</span> <span class="o">=</span> <span class="s2">"green"</span>
+<span class="k">elif</span> <span class="n">spin</span> <span class="o">==</span> <span class="mi">4</span> <span class="ow">or</span> <span class="mi">5</span><span class="p">:</span>
+    <span class="n">spin</span> <span class="o">=</span> <span class="s2">"blue"</span>
+<span class="k">elif</span> <span class="n">spin</span> <span class="o">==</span> <span class="mi">6</span><span class="p">:</span>
+    <span class="n">spin</span> <span class="o">=</span> <span class="s2">"purple"</span>
+<span class="k">elif</span> <span class="n">spin</span> <span class="o">==</span> <span class="mi">7</span><span class="p">:</span>
+    <span class="n">spin</span> <span class="o">=</span> <span class="s2">"red"</span>
+<span class="k">elif</span> <span class="n">spin</span> <span class="o">==</span> <span class="mi">8</span> <span class="p">:</span>
+    <span class="n">spin</span> <span class="o">=</span> <span class="s2">"orange"</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"You spun: "</span> <span class="o">+</span> <span class="n">spin</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>You spun: green
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -279,9 +329,9 @@ Hypotenuse is 5.0
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Lesson-3.15.2">
-<a class="anchor" href="#Lesson-3.15.2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lesson 3.15.2<a class="anchor-link" href="#Lesson-3.15.2"> </a>
-</h3>
+<p><strong>What numbers can be outputted from RANDOM(12,20) and what numbers are excluded?</strong> <br></p>
+<p>12, 13, 14, 15, 16, 17 18, 19, and 20 can be outputted. Any number less than 12 or greater than 20 is excluded, as it's not in the parameters.</p>
+
 </div>
 </div>
 </div>
