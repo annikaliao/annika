@@ -131,6 +131,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h3"><a href="#Hack-#2">Hack #2 </a></li>
 <li class="toc-entry toc-h3"><a href="#Hack-#3">Hack #3 </a></li>
 <li class="toc-entry toc-h3"><a href="#Hack-#4">Hack #4 </a></li>
+<li class="toc-entry toc-h3"><a href="#Extra">Extra </a></li>
 </ul>
 </li>
 </ul><!--
@@ -282,8 +283,9 @@ sum: 26
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>You are Player A. You can input whether you want to shoot rock, paper or scissors. At random, either rock, paper, or scissors, will be assigned to Player B. If the two players' values are equal, then they will both receive a point. If one player gets rock and the other paper, paper will win, and that player will receive a point. This will also apply to scissors beating paper and rock beating scissors. The first player to receive 3 points wins the game, and the simulation stops.</p>
-
+<h3 id="Extra">
+<a class="anchor" href="#Extra" aria-hidden="true"><span class="octicon octicon-link"></span></a>Extra<a class="anchor-link" href="#Extra"> </a>
+</h3>
 </div>
 </div>
 </div>
@@ -296,24 +298,48 @@ sum: 26
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
 
-<span class="nb">round</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="nb">round</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span>
 
-<span class="k">for</span> <span class="nb">round</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Round"</span><span class="p">,</span> <span class="nb">round</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="ow">or</span> <span class="n">b</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Round"</span><span class="p">,</span> <span class="nb">round</span><span class="p">)</span>
 
     <span class="n">throwA</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Would you like to throw rock, paper, or scissors?"</span><span class="p">)</span> 
     <span class="nb">print</span><span class="p">(</span><span class="s2">"You:"</span><span class="p">,</span> <span class="n">throwA</span><span class="p">)</span>
 
     <span class="n">throws</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'rock'</span><span class="p">,</span> <span class="s1">'paper'</span><span class="p">,</span> <span class="s1">'scissors'</span><span class="p">]</span>
     <span class="n">throwB</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">throws</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Player:"</span><span class="p">,</span> <span class="n">throwB</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Annika:"</span><span class="p">,</span> <span class="n">throwB</span><span class="p">)</span>
 
     <span class="k">if</span> <span class="n">throwA</span> <span class="o">==</span> <span class="n">throwB</span><span class="p">:</span>
         <span class="n">a</span> <span class="o">+=</span> <span class="mi">1</span>
         <span class="n">b</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"Tie! You both receive a point."</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Tie, you both selected "</span> <span class="o">+</span> <span class="n">throwA</span> <span class="o">+</span> <span class="s2">". You both receive a point."</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">throwA</span> <span class="o">==</span> <span class="s2">"rock"</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">throwB</span> <span class="o">==</span> <span class="s2">"scissors"</span><span class="p">:</span>
+            <span class="n">a</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"Rock smashes scissors!"</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">b</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"Paper covers rock!"</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">throwA</span> <span class="o">==</span> <span class="s2">"paper"</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">throwB</span> <span class="o">==</span> <span class="s2">"rock"</span><span class="p">:</span>
+            <span class="n">a</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"Paper covers rock!"</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">b</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"Scissors cuts paper!"</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">throwA</span> <span class="o">==</span> <span class="s2">"scissors"</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">throwB</span> <span class="o">==</span> <span class="s2">"paper"</span><span class="p">:</span>
+            <span class="n">a</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"Scissors cuts paper!"</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">b</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"Rock smashes scissors!"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Your score:"</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Annika's score:"</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+    <span class="nb">round</span> <span class="o">+=</span><span class="mi">1</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Game over!"</span><span class="p">)</span>
 </pre></div>
@@ -328,48 +354,32 @@ sum: 26
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Round 1
-You: rock
-Player: scissors
-Round 2
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
 <pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">KeyboardInterrupt</span>                         Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/home/annikaliao/vscode/annika/_notebooks/2022-12-13-3.16.ipynb Cell 7</span> in <span class="ansi-cyan-fg">&lt;cell line: 5&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/annikaliao/vscode/annika/_notebooks/2022-12-13-3.16.ipynb#W6sdnNjb2RlLXJlbW90ZQ%3D%3D?line=4'&gt;5&lt;/a&gt;</span> for round in range(1, 3):
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/annikaliao/vscode/annika/_notebooks/2022-12-13-3.16.ipynb#W6sdnNjb2RlLXJlbW90ZQ%3D%3D?line=5'&gt;6&lt;/a&gt;</span>     print("Round", round)
-<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/annikaliao/vscode/annika/_notebooks/2022-12-13-3.16.ipynb#W6sdnNjb2RlLXJlbW90ZQ%3D%3D?line=7'&gt;8&lt;/a&gt;</span>     throwA = input("Would you like to throw rock, paper, or scissors?") 
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/annikaliao/vscode/annika/_notebooks/2022-12-13-3.16.ipynb#W6sdnNjb2RlLXJlbW90ZQ%3D%3D?line=8'&gt;9&lt;/a&gt;</span>     print("You:", throwA)
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/annikaliao/vscode/annika/_notebooks/2022-12-13-3.16.ipynb#W6sdnNjb2RlLXJlbW90ZQ%3D%3D?line=10'&gt;11&lt;/a&gt;</span>     b = ['rock', 'paper', 'scissors']
+Round 1
+You: rock
+Annika: scissors
+Rock smashes scissors!
 
-File <span class="ansi-green-fg">~/.local/lib/python3.8/site-packages/ipykernel/kernelbase.py:1177</span>, in <span class="ansi-cyan-fg">Kernel.raw_input</span><span class="ansi-blue-fg">(self, prompt)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1173</span> if not self._allow_stdin:
-<span class="ansi-green-intense-fg ansi-bold">   1174</span>     raise StdinNotImplementedError(
-<span class="ansi-green-intense-fg ansi-bold">   1175</span>         "raw_input was called, but this frontend does not support input requests."
-<span class="ansi-green-intense-fg ansi-bold">   1176</span>     )
-<span class="ansi-green-fg">-&gt; 1177</span> return self._input_request(
-<span class="ansi-green-intense-fg ansi-bold">   1178</span>     str(prompt),
-<span class="ansi-green-intense-fg ansi-bold">   1179</span>     self._parent_ident["shell"],
-<span class="ansi-green-intense-fg ansi-bold">   1180</span>     self.get_parent("shell"),
-<span class="ansi-green-intense-fg ansi-bold">   1181</span>     password=False,
-<span class="ansi-green-intense-fg ansi-bold">   1182</span> )
+Your score: 1
+Annika's score: 0
 
-File <span class="ansi-green-fg">~/.local/lib/python3.8/site-packages/ipykernel/kernelbase.py:1219</span>, in <span class="ansi-cyan-fg">Kernel._input_request</span><span class="ansi-blue-fg">(self, prompt, ident, parent, password)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1216</span>             break
-<span class="ansi-green-intense-fg ansi-bold">   1217</span> except KeyboardInterrupt:
-<span class="ansi-green-intense-fg ansi-bold">   1218</span>     # re-raise KeyboardInterrupt, to truncate traceback
-<span class="ansi-green-fg">-&gt; 1219</span>     raise KeyboardInterrupt("Interrupted by user") from None
-<span class="ansi-green-intense-fg ansi-bold">   1220</span> except Exception:
-<span class="ansi-green-intense-fg ansi-bold">   1221</span>     self.log.warning("Invalid Message:", exc_info=True)
+Round 2
+You: paper
+Annika: rock
+Paper covers rock!
 
-<span class="ansi-red-fg">KeyboardInterrupt</span>: Interrupted by user</pre>
+Your score: 2
+Annika's score: 0
+
+Round 3
+You: scissors
+Annika: paper
+Scissors cuts paper!
+
+Your score: 3
+Annika's score: 0
+Game over!
+</pre>
 </div>
 </div>
 
@@ -379,6 +389,14 @@ File <span class="ansi-green-fg">~/.local/lib/python3.8/site-packages/ipykernel/
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I coded the simulation that I had described in Hack 1. I coded a rock paper scissors game where you are playing against a computer with randomized outputs. The first one to score 3 points wins! You score a point when your throw beats the computer. Rock wins scissors, paper wins rock, and scissors wins paper. If tied, you both score a point. This may not be authentic to a real life experiment, because the machine doesn't take in outside factors, such as the other player's strategies. They could throw late, allowing them to see you you throw before throwing themselves.</p>
+
+</div>
+</div>
+</div>
 </div>
 
 
