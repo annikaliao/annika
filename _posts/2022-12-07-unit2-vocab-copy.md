@@ -22,7 +22,6 @@ layout: notebook
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <html>
-<head>
 <meta charset="UTF-8">
 <table>
     <tr>
@@ -107,7 +106,6 @@ layout: notebook
         <td></td>
     </tr>
 </table>
-
 </html>
 </div>
 </div>
