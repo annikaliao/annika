@@ -4,21 +4,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Lesson 3.1-3.2 | ANNIKA</title>
+<title>Lesson 3.1-3.2 - Variables, Assignments, and Data Abstractions | ANNIKA</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Lesson 3.1-3.2" />
+<meta property="og:title" content="Lesson 3.1-3.2 - Variables, Assignments, and Data Abstractions" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Notes, questions, and hacks" />
 <meta property="og:description" content="Notes, questions, and hacks" />
-<link rel="canonical" href="https://annikaliao.github.io/annika/jupyter/2022/11/28/Week1Lesson.html" />
-<meta property="og:url" content="https://annikaliao.github.io/annika/jupyter/2022/11/28/Week1Lesson.html" />
+<link rel="canonical" href="https://annikaliao.github.io/annika/jupyter/2022/11/28/3.1-3.2-copy.html" />
+<meta property="og:url" content="https://annikaliao.github.io/annika/jupyter/2022/11/28/3.1-3.2-copy.html" />
 <meta property="og:site_name" content="ANNIKA" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-11-28T00:00:00-06:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Lesson 3.1-3.2" />
+<meta property="twitter:title" content="Lesson 3.1-3.2 - Variables, Assignments, and Data Abstractions" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-11-28T00:00:00-06:00","datePublished":"2022-11-28T00:00:00-06:00","description":"Notes, questions, and hacks","headline":"Lesson 3.1-3.2","mainEntityOfPage":{"@type":"WebPage","@id":"https://annikaliao.github.io/annika/jupyter/2022/11/28/Week1Lesson.html"},"url":"https://annikaliao.github.io/annika/jupyter/2022/11/28/Week1Lesson.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-11-28T00:00:00-06:00","datePublished":"2022-11-28T00:00:00-06:00","description":"Notes, questions, and hacks","headline":"Lesson 3.1-3.2 - Variables, Assignments, and Data Abstractions","mainEntityOfPage":{"@type":"WebPage","@id":"https://annikaliao.github.io/annika/jupyter/2022/11/28/3.1-3.2-copy.html"},"url":"https://annikaliao.github.io/annika/jupyter/2022/11/28/3.1-3.2-copy.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/annika/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://annikaliao.github.io/annika/feed.xml" title="ANNIKA" /><link rel="shortcut icon" type="image/x-icon" href="/annika/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -73,13 +73,13 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Lesson 3.1-3.2</h1><p class="page-description">Notes, questions, and hacks</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-11-28T00:00:00-06:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Lesson 3.1-3.2 - Variables, Assignments, and Data Abstractions</h1><p class="page-description">Notes, questions, and hacks</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-11-28T00:00:00-06:00" itemprop="datePublished">
         Nov 28, 2022
       </time>
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      4 min read
     
 </span></p>
 
@@ -97,24 +97,24 @@ window.onload = wrap_img;
         <div class="pb-5 d-flex flex-justify-center">
           <div class="px-2">
 
-    <a href="https://github.com/annikaliao/annika/tree/master/_notebooks/2022-11-28-Week1Lesson.ipynb" role="button" target="_blank">
+    <a href="https://github.com/annikaliao/annika/tree/master/_notebooks/2022-11-28-3.1-3.2 copy.ipynb" role="button" target="_blank">
 <img class="notebook-badge-image" src="/annika/assets/badges/github.svg" alt="View On GitHub">
     </a>
 </div>
 
           <div class="px-2">
-    <a href="https://mybinder.org/v2/gh/annikaliao/annika/master?filepath=_notebooks%2F2022-11-28-Week1Lesson.ipynb" target="_blank">
+    <a href="https://mybinder.org/v2/gh/annikaliao/annika/master?filepath=_notebooks%2F2022-11-28-3.1-3.2+copy.ipynb" target="_blank">
         <img class="notebook-badge-image" src="/annika/assets/badges/binder.svg" alt="Open In Binder"/>
     </a>
 </div>
 
           <div class="px-2">
-    <a href="https://colab.research.google.com/github/annikaliao/annika/blob/master/_notebooks/2022-11-28-Week1Lesson.ipynb" target="_blank">
+    <a href="https://colab.research.google.com/github/annikaliao/annika/blob/master/_notebooks/2022-11-28-3.1-3.2 copy.ipynb" target="_blank">
         <img class="notebook-badge-image" src="/annika/assets/badges/colab.svg" alt="Open In Colab"/>
     </a>
 </div>
           <div class="px-2">
-  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Fannikaliao%2Fannika%2Fblob%2Fmaster%2F_notebooks%2F2022-11-28-Week1Lesson.ipynb" target="_blank">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Fannikaliao%2Fannika%2Fblob%2Fmaster%2F_notebooks%2F2022-11-28-3.1-3.2+copy.ipynb" target="_blank">
       <img class="notebook-badge-image" src="/annika/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
   </a>
 </div>
@@ -124,39 +124,25 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h2"><a href="#Data-Types-and-Variables">Data Types and Variables </a>
+<li class="toc-entry toc-h2"><a href="#Notes">Notes </a></li>
+<li class="toc-entry toc-h2"><a href="#Hacks">Hacks </a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#Questions">Questions </a></li>
-<li class="toc-entry toc-h3"><a href="#Hacks">Hacks </a></li>
-</ul>
-</li>
-<li class="toc-entry toc-h2"><a href="#Variables">Variables </a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#Questions">Questions </a></li>
-<li class="toc-entry toc-h3"><a href="#Hacks">Hacks </a></li>
-</ul>
-</li>
-<li class="toc-entry toc-h2"><a href="#Lists-and-Strings-Using-Variables">Lists and Strings Using Variables </a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#Questions">Questions </a></li>
-<li class="toc-entry toc-h3"><a href="#Hacks">Hacks </a></li>
-</ul>
-</li>
-<li class="toc-entry toc-h2"><a href="#Data-Abstraction-with-Lists">Data Abstraction with Lists </a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#Hacks">Hacks </a></li>
-</ul>
-</li>
-<li class="toc-entry toc-h2"><a href="#Managing-Complexity-with-Lists">Managing Complexity with Lists </a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#Hacks">Hacks </a></li>
+<li class="toc-entry toc-h3"><a href="##1-Variable-Code">#1 Variable Code </a></li>
+<li class="toc-entry toc-h3"><a href="##2-Questions">#2 Questions </a></li>
+<li class="toc-entry toc-h3"><a href="##3-Questions">#3 Questions </a></li>
+<li class="toc-entry toc-h3"><a href="##4-List-index">#4 List index </a></li>
+<li class="toc-entry toc-h3"><a href="##5-Data-abstraction">#5 Data abstraction </a></li>
+<li class="toc-entry toc-h3"><a href="##6-Quiz">#6 Quiz </a></li>
+<li class="toc-entry toc-h3"><a href="##7-Simplify-the-list">#7 Simplify the list </a></li>
+<li class="toc-entry toc-h3"><a href="##8-Question">#8 Question </a></li>
+<li class="toc-entry toc-h3"><a href="##9-Managing-a-complex-list">#9 Managing a complex list </a></li>
 </ul>
 </li>
 </ul><!--
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
 #################################################
-# file to edit: _notebooks/2022-11-28-Week1Lesson.ipynb
+# file to edit: _notebooks/2022-11-28-3.1-3.2 copy.ipynb
 -->
 
 <div class="container" id="notebook-container">
@@ -164,10 +150,30 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Notes">
+<a class="anchor" href="#Notes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Notes<a class="anchor-link" href="#Notes"> </a>
+</h2>
 <ul>
-<li>variables is an abstraction that holds values </li>
-<li>the data in these values can be Booleans, numbers, lists, and strings</li>
-<li>
+<li>A variable is an abstraction that holds values <ul>
+<li>The data in these values can be Booleans, numbers, lists, and strings</li>
+</ul>
+</li>
+<li>Strings are series of characters</li>
+<li>Integers are number values</li>
+<li>Booleans are true/false statements</li>
+<li>When choosing variables, it is important to assign the variables name to something that correlates with what the function of the variable is supposed to do</li>
+<li>An assignment operator stores a value inside a variable</li>
+<li>Lists are sequences of elements with each element being a variable<ul>
+<li>The elements within the list can be accessed by index</li>
+</ul>
+</li>
+<li>Indexes can efficiently print an item from the list</li>
+<li>Data abstraction can be created with lists<ul>
+<li>Lists bundle together multiple elements and/or variables under one name are not defined with specified lengths</li>
+</ul>
+</li>
+<li>Use square brackets “[]” to store the values of a certain variable, then you can simply print the variable to output your desired list</li>
+<li>Lists manage the complexity of a program by creating a more efficient and coherent code segment</li>
 </ul>
 
 </div>
@@ -176,32 +182,11 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Data-Types-and-Variables">
-<a class="anchor" href="#Data-Types-and-Variables" aria-hidden="true"><span class="octicon octicon-link"></span></a>Data Types and Variables<a class="anchor-link" href="#Data-Types-and-Variables"> </a>
-</h2>
-<h3 id="Questions">
-<a class="anchor" href="#Questions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Questions<a class="anchor-link" href="#Questions"> </a>
-</h3>
-<ol>
-<li>What exactly IS a variable?<ul>
-<li>A variable is an abstraction made inside a program that holds a value.</li>
-</ul>
-</li>
-<li>What is the best data type to represent someone’s dog’s name?<ul>
-<li>A string, because it's text.</li>
-</ul>
-</li>
-<li>Why is it important to give variables specific names before containing values?<ul>
-<li>It prevents confusion and mistakes by differentiating accordingly.</li>
-</ul>
-</li>
-<li>What is the best way to represent someone’s phone number?<ul>
-<li>A string, because it will be used not as an integer but usually as a set constant.</li>
-</ul>
-</li>
-</ol>
-<h3 id="Hacks">
+<h2 id="Hacks">
 <a class="anchor" href="#Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks<a class="anchor-link" href="#Hacks"> </a>
+</h2>
+<h3 id="#1-Variable-Code">
+<a class="anchor" href="##1-Variable-Code" aria-hidden="true"><span class="octicon octicon-link"></span></a>#1 Variable Code<a class="anchor-link" href="##1-Variable-Code"> </a>
 </h3>
 </div>
 </div>
@@ -245,11 +230,8 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Variables">
-<a class="anchor" href="#Variables" aria-hidden="true"><span class="octicon octicon-link"></span></a>Variables<a class="anchor-link" href="#Variables"> </a>
-</h2>
-<h3 id="Questions">
-<a class="anchor" href="#Questions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Questions<a class="anchor-link" href="#Questions"> </a>
+<h3 id="#2-Questions">
+<a class="anchor" href="##2-Questions" aria-hidden="true"><span class="octicon octicon-link"></span></a>#2 Questions<a class="anchor-link" href="##2-Questions"> </a>
 </h3>
 <ol>
 <li>In your own words, briefly explain by writing down what an assignment operator is<ul>
@@ -265,20 +247,15 @@ window.onload = wrap_img;
 </ul>
 </li>
 </ol>
-<h3 id="Hacks">
-<a class="anchor" href="#Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks<a class="anchor-link" href="#Hacks"> </a>
-</h3>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Lists-and-Strings-Using-Variables">
-<a class="anchor" href="#Lists-and-Strings-Using-Variables" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lists and Strings Using Variables<a class="anchor-link" href="#Lists-and-Strings-Using-Variables"> </a>
-</h2>
-<h3 id="Questions">
-<a class="anchor" href="#Questions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Questions<a class="anchor-link" href="#Questions"> </a>
+<h3 id="#3-Questions">
+<a class="anchor" href="##3-Questions" aria-hidden="true"><span class="octicon octicon-link"></span></a>#3 Questions<a class="anchor-link" href="##3-Questions"> </a>
 </h3>
 <ol>
 <li>What is a list?<ul>
@@ -298,8 +275,8 @@ window.onload = wrap_img;
 </ul>
 </li>
 </ol>
-<h3 id="Hacks">
-<a class="anchor" href="#Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks<a class="anchor-link" href="#Hacks"> </a>
+<h3 id="#4-List-index">
+<a class="anchor" href="##4-List-index" aria-hidden="true"><span class="octicon octicon-link"></span></a>#4 List index<a class="anchor-link" href="##4-List-index"> </a>
 </h3>
 </div>
 </div>
@@ -344,11 +321,8 @@ spam musubi
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Data-Abstraction-with-Lists">
-<a class="anchor" href="#Data-Abstraction-with-Lists" aria-hidden="true"><span class="octicon octicon-link"></span></a>Data Abstraction with Lists<a class="anchor-link" href="#Data-Abstraction-with-Lists"> </a>
-</h2>
-<h3 id="Hacks">
-<a class="anchor" href="#Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks<a class="anchor-link" href="#Hacks"> </a>
+<h3 id="#5-Data-abstraction">
+<a class="anchor" href="##5-Data-abstraction" aria-hidden="true"><span class="octicon octicon-link"></span></a>#5 Data abstraction<a class="anchor-link" href="##5-Data-abstraction"> </a>
 </h3>
 </div>
 </div>
@@ -401,15 +375,14 @@ spam musubi
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Managing-Complexity-with-Lists">
-<a class="anchor" href="#Managing-Complexity-with-Lists" aria-hidden="true"><span class="octicon octicon-link"></span></a>Managing Complexity with Lists<a class="anchor-link" href="#Managing-Complexity-with-Lists"> </a>
-</h2>
-<h3 id="Hacks">
-<a class="anchor" href="#Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks<a class="anchor-link" href="#Hacks"> </a>
+<h3 id="#6-Quiz">
+<a class="anchor" href="##6-Quiz" aria-hidden="true"><span class="octicon octicon-link"></span></a>#6 Quiz<a class="anchor-link" href="##6-Quiz"> </a>
 </h3>
 <p><img src="https://mail.google.com/mail/u/0?ui=2&amp;ik=307c2bfad8&amp;attid=0.1&amp;permmsgid=msg-a:r4582493374494622745&amp;th=184c27275a351a09&amp;view=fimg&amp;fur=ip&amp;sz=s0-l75-ft&amp;attbid=ANGjdJ9N9qZ4_-1F_GgWrShyojfK25q38cTzSRS1LajPdIuJMXD-hSRA5D3tu1zGCtb0FzC2HLmP1hBwZydbm7LKdn3xARKXS7TtD0Kcq9_s5WY7TDxptADtstCf8uk&amp;disp=emb&amp;realattid=ii_lb1xz6480" alt="">
 I scored 2/3 on the quiz</p>
-
+<h3 id="#7-Simplify-the-list">
+<a class="anchor" href="##7-Simplify-the-list" aria-hidden="true"><span class="octicon octicon-link"></span></a>#7 Simplify the list<a class="anchor-link" href="##7-Simplify-the-list"> </a>
+</h3>
 </div>
 </div>
 </div>
@@ -457,11 +430,16 @@ I scored 2/3 on the quiz</p>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="#8-Question">
+<a class="anchor" href="##8-Question" aria-hidden="true"><span class="octicon octicon-link"></span></a>#8 Question<a class="anchor-link" href="##8-Question"> </a>
+</h3>
 <p><strong>Why are using lists better for a program, rather than writing out each line of code?</strong></p>
 <ul>
 <li>Writing out each line of code for each variable is tedious and impractical. Using a list manages this complexity, creating a more efficient and coherent code segment. It also reduces the amount of variables used, simplifying the code and making it easier to work on. </li>
 </ul>
-
+<h3 id="#9-Managing-a-complex-list">
+<a class="anchor" href="##9-Managing-a-complex-list" aria-hidden="true"><span class="octicon octicon-link"></span></a>#9 Managing a complex list<a class="anchor-link" href="##9-Managing-a-complex-list"> </a>
+</h3>
 </div>
 </div>
 </div>
@@ -512,7 +490,7 @@ I scored 2/3 on the quiz</p>
 
 
 
-  </div><a class="u-url" href="/annika/jupyter/2022/11/28/Week1Lesson.html" hidden></a>
+  </div><a class="u-url" href="/annika/jupyter/2022/11/28/3.1-3.2-copy.html" hidden></a>
 </article>
 
       </div>
