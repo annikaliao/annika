@@ -1,7 +1,7 @@
 ---
 keywords: fastai
 description: Definitions and code examples
-title: Unit 2 Vocab
+title: Unit 2 Vocab - Binary/Data Terms
 toc: true 
 badges: true
 comments: false
