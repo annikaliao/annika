@@ -1,6 +1,6 @@
 ---
 keywords: fastai
-description: Definitions and code examples
+description: Definitions and examples
 title: Unit 2 Vocab - Binary/Data Terms
 toc: true 
 badges: true
@@ -31,6 +31,9 @@ layout: notebook
         <th>Example</th>
     </tr>
     <tr>
+        <td colspan="3" style="text-align: center; vertical-align: middle;"><b>Binary Data</b></td>
+    </tr>
+    <tr>
         <td>Bits</td>
         <td>The smallest unit of data that a computer can process and store, with two possible states represented by single binary value, 0 or 1 </td>
         <td> 1 0 1 1 0 1 0 <mark>0</mark></td>
@@ -51,6 +54,9 @@ layout: notebook
         <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Hexadecimal_multiplication_table.svg/2000px-Hexadecimal_multiplication_table.svg.png" width="200" height="200"></td>
     </tr>
     <tr>
+        <td colspan="3" style="text-align: center; vertical-align: middle;"><b>Binary Numbers</b></td>
+    </tr>
+    <tr>
         <td>Unsigned Integer</td>
         <td> Integers with no + or -, meaning they can only be zero or positive values, represented as a binary number</td>
         <td rowspan="2"><img src="https://i.stack.imgur.com/0SQVh.png" width="400" height="100"></td>
@@ -63,6 +69,9 @@ layout: notebook
         <td>Floating Point</td>
         <td>A positive or negative whole number with a decimal point. Method is float(). </td>
         <td><pre>i = 5.5</pre></td>
+    </tr>
+    <tr>
+        <td colspan="3" style="text-align: center; vertical-align: middle;"><b>Binary Data Abstractions</b></td>
     </tr>
     <tr>
         <td>Boolean</td>
@@ -85,13 +94,16 @@ layout: notebook
         <td bgcolor="rgb(250, 100, 75)"> rgb(250, 100, 75) </td>
     </tr>
     <tr>
+        <td colspan="3" style="text-align: center; vertical-align: middle;"><b>Data Compression</b></td>
+    </tr>
+    <tr>
         <td>Lossy</td>
-        <td></td>
+        <td>Compression that reduces file size by permanently removing some of the original data</td>
         <td></td>
     </tr>
     <tr>
         <td>Lossless</td>
-        <td></td>
+        <td>Compression that reduces file size by removing unnecessary metadata</td>
         <td></td>
     </tr>
 </table>
