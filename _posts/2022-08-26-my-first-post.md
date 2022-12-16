@@ -5,7 +5,7 @@ title: Hello World
 toc: false 
 badges: true
 comments: true
-categories: [jupyter]
+categories: [jupyter, week0]
 image: images/chart-preview.png
 nb_path: _notebooks/2022-08-26-my-first-post.ipynb
 layout: notebook

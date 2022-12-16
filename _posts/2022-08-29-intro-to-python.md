@@ -5,7 +5,7 @@ title: Python Quiz
 toc: false 
 badges: true
 comments: true
-categories: [jupyter]
+categories: [jupyter, week2]
 image: images/chart-preview.png
 nb_path: _notebooks/2022-08-29-intro-to-python.ipynb
 layout: notebook

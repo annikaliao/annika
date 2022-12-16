@@ -3,7 +3,7 @@ keywords: fastai
 description: What I have learned
 title: Lists, Dictionaries, Iteration Notes
 toc: true
-categories: [jupyter]
+categories: [jupyter, week2]
 tags: [python]
 nb_path: _notebooks/2022-08-30-Python-Notes.ipynb
 layout: notebook

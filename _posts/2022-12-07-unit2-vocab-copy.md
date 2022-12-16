@@ -5,7 +5,7 @@ title: Unit 2 Vocab - Binary/Data Terms
 toc: true 
 badges: true
 comments: false
-categories: [jupyter]
+categories: [jupyter, notes]
 nb_path: _notebooks/2022-12-07-unit2-vocab copy.ipynb
 layout: notebook
 ---

@@ -4,7 +4,7 @@ description: My initial outline for my College Board Create Performance Task
 title: College Board Create Performance Task Outline
 badges: true
 toc: true
-categories: [jupyter]
+categories: [jupyter, week3]
 nb_path: _notebooks/2022-09-11-creative-development-outline.ipynb
 layout: notebook
 ---

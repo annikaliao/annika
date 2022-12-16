@@ -5,7 +5,7 @@ title: Algorithm Teaching Prep
 toc: true 
 badges: true
 comments: false
-categories: [jupyter]
+categories: [jupyter, week13]
 nb_path: _notebooks/2022-11-16-algorithms copy.ipynb
 layout: notebook
 ---

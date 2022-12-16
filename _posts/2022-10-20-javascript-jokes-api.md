@@ -4,7 +4,7 @@ description: Breaking down the rapidapi code
 title: Javascript Web Page using an API
 badges: true
 toc: true
-categories: [jupyter]
+categories: [jupyter, week9]
 nb_path: _notebooks/2022-10-20-javascript-jokes-api.ipynb
 layout: notebook
 ---

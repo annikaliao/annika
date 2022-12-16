@@ -3,7 +3,7 @@ keywords: fastai
 description: Experimenting with APIs
 title: API Exploration
 toc: true
-categories: [jupyter] 
+categories: [jupyter, week7] 
 tags: [python]
 nb_path: _notebooks/2022-10-06-pythonapi.ipynb
 layout: notebook
