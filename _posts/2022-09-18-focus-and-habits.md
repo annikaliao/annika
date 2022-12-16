@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: Notes on focus and habits
-categories: [markdown]
+categories: [markdown, week4]
 title: Focus and Habits
 ---
 

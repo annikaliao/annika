@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: Notes
-categories: [markdown] 
+categories: [markdown, notes] 
 title: Cumulative Trimester 2 Notes
 ---
 

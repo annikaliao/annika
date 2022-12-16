@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: Initial outline for our group's final project
-categories: [markdown]
+categories: [markdown, week6]
 title: Final Project Outline
 ---
 

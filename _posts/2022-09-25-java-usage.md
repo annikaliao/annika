@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: Display of use of JavaScript
-categories: [java]
+categories: [java, week5]
 title: Java Usage
 ---
 

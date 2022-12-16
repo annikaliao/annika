@@ -2,7 +2,7 @@
 toc: false
 layout: post
 description: Basic Github administration/sociology policies
-categories: [markdown]
+categories: [markdown, week7]
 title: GitHub and Git Sociology
 ---
 

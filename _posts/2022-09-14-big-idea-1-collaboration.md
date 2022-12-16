@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: Notes on collaboration
-categories: [markdown]
+categories: [markdown, week4]
 title: 1.1 Collaboration
 ---
 ## 1.1 Daily Video

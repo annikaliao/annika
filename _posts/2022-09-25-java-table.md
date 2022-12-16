@@ -2,7 +2,7 @@
 toc: false
 layout: post
 description: Exploring Java
-categories: [java]
+categories: [java, week5]
 title: Java Program
 ---
 

@@ -3,7 +3,7 @@ title: Fetch of Love Calculator data
 layout: default
 description: Formatting APIs
 permalink: /data/lovecalc
-categories: [java]
+categories: [java, week7]
 ---
 
 {% include navbar-data.html %}

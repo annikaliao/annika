@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: My trimester 1 Night at the Museum experience!
-categories: [markdown] 
+categories: [markdown, week11] 
 title: Night at the Museum 
 ---
 
