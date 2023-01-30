@@ -6,11 +6,6 @@ categories: [markdown, week20]
 title: CPT Individual Feature Outline
 ---
 
-Each individual performs starts "pre-view" outline/write-up of materials required for College Board. 
-Describe portion of Project you will use for Create Performance task
-Describe code plan as it is required for CB,
-Consider what will be demonstrated in video, aka video plan
-
 ## Feature Description
 My feature is a period cycle tracker.
 
