@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      3 min read
     
 </span></p>
 
@@ -99,21 +99,33 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h2"><a href="#pre-view-outline">Pre-View Outline</a></li>
-<li class="toc-entry toc-h2"><a href="#feature-description">Feature Description</a></li>
-<li class="toc-entry toc-h2"><a href="#code-plan">Code Plan</a></li>
+<li class="toc-entry toc-h2"><a href="#feature-description">Feature Description</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#program-purpose-and-function">Program Purpose and Function</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#code-plan">Code Plan</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#data-abstraction">Data Abstraction</a></li>
+<li class="toc-entry toc-h3"><a href="#managing-complexity">Managing Complexity</a></li>
+<li class="toc-entry toc-h3"><a href="#procedural-abstraction">Procedural Abstraction</a></li>
+<li class="toc-entry toc-h3"><a href="#algorithm-implementation">Algorithm Implementation</a></li>
+<li class="toc-entry toc-h3"><a href="#testing">Testing</a></li>
+</ul>
+</li>
 <li class="toc-entry toc-h2"><a href="#video-plan">Video Plan</a></li>
 </ul><p>Each individual performs starts “pre-view” outline/write-up of materials required for College Board. 
 Describe portion of Project you will use for Create Performance task
 Describe code plan as it is required for CB,
 Consider what will be demonstrated in video, aka video plan</p>
 
-<h2 id="pre-view-outline">
-<a class="anchor" href="#pre-view-outline" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pre-View Outline</h2>
-
 <h2 id="feature-description">
 <a class="anchor" href="#feature-description" aria-hidden="true"><span class="octicon octicon-link"></span></a>Feature Description</h2>
-<p>This period cycle tracker allows</p>
+<p>My feature is a period cycle tracker.</p>
+
+<h3 id="program-purpose-and-function">
+<a class="anchor" href="#program-purpose-and-function" aria-hidden="true"><span class="octicon octicon-link"></span></a>Program Purpose and Function</h3>
+<p>The program can help women track periods, for health and education. This period cycle tracker allows users to submit the information of their last period, including date and length, and the program will use the data to display the date of their next period on a calender. The input is the dates and numbers inputted by the user, and the output is the date of their next period, as well it visually displayed on a calender.</p>
 
 <h2 id="code-plan">
 <a class="anchor" href="#code-plan" aria-hidden="true"><span class="octicon octicon-link"></span></a>Code Plan</h2>
@@ -121,9 +133,30 @@ Consider what will be demonstrated in video, aka video plan</p>
   <p>according to CB requirements</p>
 </blockquote>
 
+<h3 id="data-abstraction">
+<a class="anchor" href="#data-abstraction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Data Abstraction</h3>
+<p>I will use data abstraction in storing the user input. The date, length of period, and lenth of cycle will all be stored in a JavaScript object. This way, the different types of data can all be compiled together, to make the program’s data easier to access when calculating dates for every month.</p>
+
+<h3 id="managing-complexity">
+<a class="anchor" href="#managing-complexity" aria-hidden="true"><span class="octicon octicon-link"></span></a>Managing Complexity</h3>
+<p>I would have to create new sets of variables and functions for each month of the year in order to display each period cycle. By keeping the user’s data all in an object, each time the calculation runs for a month’s output, it will just access the data in the object, instead of the function being written several times.</p>
+
+<h3 id="procedural-abstraction">
+<a class="anchor" href="#procedural-abstraction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Procedural Abstraction</h3>
+<p>My procedure will take the data from the object and calculate and produce the date of the next period. The parameters will be date and length. This procedure is what creates the output.</p>
+
+<h3 id="algorithm-implementation">
+<a class="anchor" href="#algorithm-implementation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Algorithm Implementation</h3>
+<p>With this output (sequencing), the program can use this new produced date to run again (iteration) to produce the following month’s period. The default is to output 6 months of periods, but if the user chooses to display more, or less, then it will output a different output, which is more or less months (selection).</p>
+
+<h3 id="testing">
+<a class="anchor" href="#testing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Testing</h3>
+<p>The first call will be the user input of January 4th, 5 days, and 28 days. 28 days will be added to January 1st to produce the next period start and 5 days will be added to this date to calculate period end. Result will be that the periods will last from February 1st to 6th, March 1st to 6th, and March 29th to April 3rd. 
+The second call will be the user input of January 4th, 5 days, and 28 days, and to display 6 months instead of 3. 28 days will be added to January 1st to produce the next period start and 5 days will be added to this date to calculate period end. Result will be that the periods will last from February 1st to 6th, March 1st to 6th, March 29th to April 3rd, April 26th to May 1st, May 24th to May 29th, and June 26 to July 1st.</p>
+
 <h2 id="video-plan">
 <a class="anchor" href="#video-plan" aria-hidden="true"><span class="octicon octicon-link"></span></a>Video Plan</h2>
-
+<p>I will input the date January 4th into date of last period, 5 days into length of last period, and 28 days into usual menstrual cycle. Program will output that the periods will last from February 1st to 6th, March 1st to 6th, and March 29th to April 3rd.</p>
 
   </div><a class="u-url" href="/annika/markdown/week20/2023/01/27/projectblog.html" hidden></a>
 </article>
