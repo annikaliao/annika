@@ -1,6 +1,6 @@
 ---
 title: Binary Colors
-layout: default
+layout: base
 description: Binary math application using HTML, Liquid, and JavaScript
 image: /images/binary.png
 categories: [jupyter]

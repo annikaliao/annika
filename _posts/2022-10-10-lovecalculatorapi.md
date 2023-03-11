@@ -1,6 +1,6 @@
 ---
 title: Fetch of Love Calculator data
-layout: default
+layout: base
 description: Formatting APIs
 permalink: /data/lovecalc
 categories: [java, week7]
