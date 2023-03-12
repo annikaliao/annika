@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      15 min read
+      22 min read
     
 </span></p>
 
@@ -119,7 +119,6 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h1"><a href="#Files-To-Get">Files To Get </a></li>
 <li class="toc-entry toc-h1"><a href="#Pandas-and-DataFrames">Pandas and DataFrames </a></li>
 <li class="toc-entry toc-h1"><a href="#Cleaning-Data">Cleaning Data </a></li>
 <li class="toc-entry toc-h1"><a href="#Extracting-Info">Extracting Info </a>
@@ -147,6 +146,12 @@ window.onload = wrap_img;
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#Machine-Learning">Machine Learning </a></li>
+<li class="toc-entry toc-h2"><a href="#Hacks">Hacks </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#CB-Practice">CB Practice </a></li>
+<li class="toc-entry toc-h3"><a href="#Pandas-Dataset">Pandas Dataset </a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul><!--
@@ -158,23 +163,6 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Files-To-Get">
-<a class="anchor" href="#Files-To-Get" aria-hidden="true"><span class="octicon octicon-link"></span></a>Files To Get<a class="anchor-link" href="#Files-To-Get"> </a>
-</h1>
-<p>Save this file to your <strong>_notebooks</strong> folder</p>
-<p>wget <a href="https://raw.githubusercontent.com/nighthawkcoders/APCSP/master/_notebooks/2023-03-09-AP-unit2-3.ipynb">https://raw.githubusercontent.com/nighthawkcoders/APCSP/master/_notebooks/2023-03-09-AP-unit2-3.ipynb</a></p>
-<p>Save these files into a subfolder named <strong>files</strong> in your <strong>_notebooks</strong> folder</p>
-<p>wget <a href="https://raw.githubusercontent.com/nighthawkcoders/APCSP/master/_notebooks/files/data.csv">https://raw.githubusercontent.com/nighthawkcoders/APCSP/master/_notebooks/files/data.csv</a></p>
-<p>wget <a href="https://raw.githubusercontent.com/nighthawkcoders/APCSP/master/_notebooks/files/grade.json">https://raw.githubusercontent.com/nighthawkcoders/APCSP/master/_notebooks/files/grade.json</a></p>
-<p>Save this image into a subfolder named <strong>images</strong> in your <strong>_notebooks</strong> folder</p>
-<p>wget <a href="https://raw.githubusercontent.com/nighthawkcoders/APCSP/master/_notebooks/images/table_dataframe.png">https://raw.githubusercontent.com/nighthawkcoders/APCSP/master/_notebooks/images/table_dataframe.png</a></p>
-
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -735,6 +723,29 @@ Name: day1, dtype: int64
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;class 'pandas.core.frame.DataFrame'&gt;
+Index: 3 entries, day1 to day3
+Data columns (total 2 columns):
+ #   Column    Non-Null Count  Dtype
+---  ------    --------------  -----
+ 0   calories  3 non-null      int64
+ 1   duration  3 non-null      int64
+dtypes: int64(2)
+memory usage: 180.0+ bytes
+None
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -1178,6 +1189,31 @@ Index(['survived', 'pclass', 'sex', 'age', 'sibsp', 'parch', 'fare',
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>survived       0.000000
+pclass         2.464072
+sex            0.844311
+age           31.073353
+sibsp          0.562874
+parch          0.398204
+fare          24.835902
+alone          0.616766
+embarked_C     0.185629
+embarked_Q     0.038922
+embarked_S     0.775449
+dtype: float64
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -1202,6 +1238,31 @@ Index(['survived', 'pclass', 'sex', 'age', 'sibsp', 'parch', 'fare',
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>survived       1.000000
+pclass         1.878261
+sex            0.326087
+age           28.481522
+sibsp          0.504348
+parch          0.508696
+fare          50.188806
+alone          0.456522
+embarked_C     0.152174
+embarked_Q     0.034783
+embarked_S     0.813043
+dtype: float64
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -1230,6 +1291,43 @@ Index(['survived', 'pclass', 'sex', 'age', 'sibsp', 'parch', 'fare',
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>survived        1.0000
+pclass          3.0000
+sex             1.0000
+age            80.0000
+sibsp           4.0000
+parch           5.0000
+fare          512.3292
+alone           1.0000
+embarked_C      1.0000
+embarked_Q      1.0000
+embarked_S      1.0000
+dtype: float64
+survived      1.00
+pclass        1.00
+sex           0.00
+age           0.75
+sibsp         0.00
+parch         0.00
+fare          0.00
+alone         0.00
+embarked_C    0.00
+embarked_Q    0.00
+embarked_S    0.00
+dtype: float64
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -1293,6 +1391,337 @@ Index(['survived', 'pclass', 'sex', 'age', 'sibsp', 'parch', 'fare',
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>DecisionTreeClassifier Accuracy: 0.7470588235294118
+LogisticRegression Accuracy: 0.788235294117647
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/home/annikaliao/anaconda3/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><br><br></p>
+<h2 id="Hacks">
+<a class="anchor" href="#Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks<a class="anchor-link" href="#Hacks"> </a>
+</h2>
+<h3 id="CB-Practice">
+<a class="anchor" href="#CB-Practice" aria-hidden="true"><span class="octicon octicon-link"></span></a>CB Practice<a class="anchor-link" href="#CB-Practice"> </a>
+</h3>
+<p>2.3:</p>
+<p><strong>1. A researcher is analyzing data about students in a school district to determine whether there is a relationship between grade point average and number of absences. The researcher plans on compiling data from several sources to create a record for each student. Upon compiling the data, the researcher identifies a problem due to the fact that neither data source uses a unique ID number for each student. What best describes the problem caused by the lack of unique ID numbers?</strong></p>
+<p>Students who have the same name may be confused with each other. A unique identifier would be required in order to distinguish between two students with the same first and last names. Since there are two separate datasets, they need to be related with a unique id in order to be able to work together. If there are two students with the same name, the data will not correspond.</p>
+<p><strong>2. A team of researchers wants to create a program to analyze the amount of pollution reported in roughly 3,000 counties across the United States. The program is intended to combine county data sets and then process the data. What is most likely to be a challenge in creating the program?</strong>&lt;</p>
+<p>Different counties may organize data in different ways. It will be a challenge to clean the data from the different counties to make the data uniform. The way pollution data is captured and organized may vary significantly from county to county. The data needs to be uniform with no garbage data in order to be processed correctly, so it will need to be cleaned before the program is created.</p>
+<p><strong>3. A student is creating a Web site that is intended to display information about a city based on a city name that a user enters in a text field. What is likely to be challenges associated with processing city names that users might provide as input?</strong></p>
+<p>Users might enter abbreviations for the names of cities, and misspell the name of the city. The best thing for this program is to have a unique id, then have all the data added to that id. However, if the id is typed several different ways, they won't be related in the database. The student will have to clean the data to make it uniform before it can be processed.</p>
+<p><strong>4. A database of information about shows at a concert venue contains the following information: Name of artist performing at the show, Date of show, Total dollar amount of all tickets sold. What additional pieces of information would be most useful in determining the artist with the greatest attendance during a particular month?</strong></p>
+<p>Average ticket price, because the attendance for a particular show can be calculated dividing the total dollar amount of all tickets sold by the average ticket price. With exact attendance numbers, it is easy to accurately and quickly determine what artist had the greatest attendance, by sorting the database.</p>
+<p><strong>5. A camera mounted on the dashboard of a car captures an image of the view from the driver’s seat every second. Each image is stored as data. Along with each image, the camera also captures and stores the car’s speed, the date and time, and the car’s GPS location as metadata. Which of the following can best be determined using only the data and none of the metadata?</strong></p>
+<p>The number of bicycles the car passed on a particular day, as this is not data captured by the camera. Determining the number of bicycles the car encountered would require the use of image recognition software to examine the images collected by the camera. The images are the data collected and no metadata would be required.</p>
+<p><strong>6. A teacher sends students an anonymous survey in order to learn more about the students’ work habits. The survey contains the following questions: <br> On average, how long does homework take you each night (in minutes) ? <br> On average, how long do you study for each test (in minutes) ? <br> Do you enjoy the subject material of this class (yes or no) ?<br> What questions about the students who responded to the survey can the teacher answer by analyzing the survey results?</strong></p>
+<p>'Do students who enjoy the subject material tend to spend more time on homework each night than the other students do?' This can be answered because the teacher can detect a correlation between responses to questions 1 and 3 on the survey.
+'Do students who spend more time on homework each night tend to spend less time studying for tests than the other students do?' This can be answered because the teacher can detect a correlation between responses to questions 1 and 2 on the survey.
+<br><br></p>
+<h3 id="Pandas-Dataset">
+<a class="anchor" href="#Pandas-Dataset" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pandas Dataset<a class="anchor-link" href="#Pandas-Dataset"> </a>
+</h3>
+<p><strong>Creating simple period dataset:</strong></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="c1">#the data can be stored as a python dictionary</span>
+<span class="nb">dict</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s2">"periodlength"</span><span class="p">:</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span>
+  <span class="s2">"cyclelength"</span><span class="p">:</span> <span class="p">[</span><span class="mi">28</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
+<span class="p">}</span>
+<span class="c1">#stores the data in a data frame</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">-------------Dict_to_DF------------------"</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">dict</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">----------Dict_to_DF_labels--------------"</span><span class="p">)</span>
+
+<span class="c1">#or with the index argument, you can label rows.</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">dict</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"period1"</span><span class="p">,</span> <span class="s2">"period2"</span><span class="p">,</span> <span class="s2">"period3"</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">--------------Single Row----------------"</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s2">"period2"</span><span class="p">])</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">----Period Length Values Descending------"</span><span class="p">)</span>
+
+<span class="n">sort</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">dict</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"period1"</span><span class="p">,</span> <span class="s2">"period2"</span><span class="p">,</span> <span class="s2">"period3"</span><span class="p">])</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">'periodlength'</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">sort</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">------Average Period Length Values-------"</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">periodlength</span> <span class="o">==</span> <span class="n">df</span><span class="o">.</span><span class="n">periodlength</span><span class="o">.</span><span class="n">max</span><span class="p">()])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+-------------Dict_to_DF------------------
+   periodlength  cyclelength
+0             6           28
+1             4           40
+2             5           20
+
+----------Dict_to_DF_labels--------------
+         periodlength  cyclelength
+period1             6           28
+period2             4           40
+period3             5           20
+
+--------------Single Row----------------
+periodlength     4
+cyclelength     40
+Name: period2, dtype: int64
+
+----Period Length Values Descending------
+         periodlength  cyclelength
+period1             6           28
+period3             5           20
+period2             4           40
+
+------Average Period Length Values-------
+         periodlength  cyclelength
+period1             6           28
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Cleaning "Tips" dataset from Seaborn library:</strong></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s1">'tips'</span><span class="p">)</span>
+
+<span class="n">data</span><span class="p">[</span><span class="s2">"tip_percent"</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">"tip"</span><span class="p">]</span> <span class="o">/</span> <span class="n">data</span><span class="p">[</span><span class="s2">"total_bill"</span><span class="p">]</span> <span class="o">*</span> <span class="mi">100</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>     total_bill   tip     sex smoker   day    time  size  tip_percent
+0         16.99  1.01  Female     No   Sun  Dinner     2     5.944673
+1         10.34  1.66    Male     No   Sun  Dinner     3    16.054159
+2         21.01  3.50    Male     No   Sun  Dinner     3    16.658734
+3         23.68  3.31    Male     No   Sun  Dinner     2    13.978041
+4         24.59  3.61  Female     No   Sun  Dinner     4    14.680765
+..          ...   ...     ...    ...   ...     ...   ...          ...
+239       29.03  5.92    Male     No   Sat  Dinner     3    20.392697
+240       27.18  2.00  Female    Yes   Sat  Dinner     2     7.358352
+241       22.67  2.00    Male    Yes   Sat  Dinner     2     8.822232
+242       17.82  1.75    Male     No   Sat  Dinner     2     9.820426
+243       18.78  3.00  Female     No  Thur  Dinner     2    15.974441
+
+[244 rows x 8 columns]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s1">'tips'</span><span class="p">)</span>
+
+<span class="c1"># Filter for female customers who tipped over 10%</span>
+<span class="n">femaletip</span> <span class="o">=</span> <span class="n">data</span><span class="p">[(</span><span class="n">data</span><span class="p">[</span><span class="s1">'sex'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'Female'</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">'tip_percent'</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)]</span>
+
+<span class="n">maletip</span> <span class="o">=</span> <span class="n">data</span><span class="p">[(</span><span class="n">data</span><span class="p">[</span><span class="s1">'sex'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'Male'</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">'tip_percent'</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)]</span>
+
+<span class="c1"># Count the number of female tippers</span>
+<span class="n">num_femaletip</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">femaletip</span><span class="p">)</span>
+<span class="n">num_maletip</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">maletip</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Number of male customers who tipped over 10%:'</span><span class="p">,</span> <span class="n">num_maletip</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'</span><span class="se">\n</span><span class="s1">Number of female customers who tipped over 10%:'</span><span class="p">,</span> <span class="n">num_femaletip</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Number of male customers who tipped over 10%: 136
+
+Number of female customers who tipped over 10%: 81
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Using Final Project API:</strong></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="k">def</span> <span class="nf">fetch</span><span class="p">():</span>
+    <span class="sd">'''Obtain data from an endpoint'''</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="s2">"https://flowhealth.duckdns.org/api/periods/"</span>
+    <span class="n">fetch</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+    <span class="n">periods</span> <span class="o">=</span> <span class="n">fetch</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+
+    <span class="c1"># create DataFrame from list of dictionaries</span>
+    <span class="n">df1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">periods</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">df1</span><span class="p">)</span>
+
+    <span class="n">desc</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[</span><span class="s1">'periodlength'</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">desc</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2"> Max and Min period length"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">df1</span><span class="p">[</span><span class="n">df1</span><span class="o">.</span><span class="n">periodlength</span> <span class="o">==</span> <span class="n">df1</span><span class="o">.</span><span class="n">periodlength</span><span class="o">.</span><span class="n">max</span><span class="p">()])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">df1</span><span class="p">[</span><span class="n">df1</span><span class="o">.</span><span class="n">periodlength</span> <span class="o">==</span> <span class="n">df1</span><span class="o">.</span><span class="n">periodlength</span><span class="o">.</span><span class="n">min</span><span class="p">()])</span>
+
+<span class="n">fetch</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>  cyclelength  id  nextperiod periodlength
+0          12   1  2023-02-15            2
+1          28   2  2023-03-15            7
+2          35   3  2023-01-05            6
+3          30   4  2023-03-04            5
+count     4
+unique    4
+top       2
+freq      1
+Name: periodlength, dtype: object
+
+ Max and Min period length
+  cyclelength  id  nextperiod periodlength
+1          28   2  2023-03-15            7
+  cyclelength  id  nextperiod periodlength
+0          12   1  2023-02-15            2
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
