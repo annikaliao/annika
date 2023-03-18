@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      6 min read
     
 </span></p>
 
@@ -122,6 +122,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h1"><a href="#Database-Programming-is-Program-with-Data">Database Programming is Program with Data </a>
 <ul>
 <li class="toc-entry toc-h2"><a href="#Schema-of-Users-table-in-Sqlite.db">Schema of Users table in Sqlite.db </a></li>
+<li class="toc-entry toc-h2"><a href="#What-are-the-Data-Types-in-SQL-table?">What are the Data Types in SQL table? </a></li>
 <li class="toc-entry toc-h2"><a href="#Reading-Users-table-in-Sqlite.db">Reading Users table in Sqlite.db </a></li>
 <li class="toc-entry toc-h2"><a href="#Create-a-new-User-in-table-in-Sqlite.db">Create a new User in table in Sqlite.db </a></li>
 <li class="toc-entry toc-h2"><a href="#Updating-a-User-in-table-in-Sqlite.db">Updating a User in table in Sqlite.db </a></li>
@@ -166,10 +167,21 @@ window.onload = wrap_img;
 <p>Uses PRAGMA statement to read schema.</p>
 </blockquote>
 <p>Describe Schema, here is resource <a href="https://www.sqlite.org/index.html">Resource</a>- What is a database schema?</p>
+
+<pre><code>- It s metadata for a database
+</code></pre>
 <ul>
-<li>What is the purpose of identity Column in SQL database?</li>
-<li>What is the purpose of a primary key in SQL database?</li>
-<li>What are the Data Types in SQL table?</li>
+<li>What is the purpose of identity Column in SQL database?<ul>
+<li>Columns are part of the schema and identify the parts of the data</li>
+</ul>
+</li>
+<li>What is the purpose of a primary key in SQL database?<ul>
+<li>The id in a database is the primary key, and is the record number. This differentiates the records, convinient when they may have same data.</li>
+</ul>
+</li>
+<li><h2 id="What-are-the-Data-Types-in-SQL-table?">
+<a class="anchor" href="#What-are-the-Data-Types-in-SQL-table?" aria-hidden="true"><span class="octicon octicon-link"></span></a>What are the Data Types in SQL table?<a class="anchor-link" href="#What-are-the-Data-Types-in-SQL-table?"> </a>
+</h2></li>
 </ul>
 
 </div>
@@ -184,7 +196,7 @@ window.onload = wrap_img;
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
 
-<span class="n">database</span> <span class="o">=</span> <span class="s1">'files/sqlite.db'</span> <span class="c1"># this is location of database</span>
+<span class="n">database</span> <span class="o">=</span> <span class="s1">'instance/sqlite.db'</span> <span class="c1"># this is location of database</span>
 
 <span class="k">def</span> <span class="nf">schema</span><span class="p">():</span>
     
@@ -205,9 +217,28 @@ window.onload = wrap_img;
     <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     
 <span class="n">schema</span><span class="p">()</span>
+<span class="c1"># metadata for database</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(0, 'id', 'INTEGER', 1, None, 1)
+(1, '_name', 'VARCHAR(255)', 1, None, 0)
+(2, '_uid', 'VARCHAR(255)', 1, None, 0)
+(3, '_password', 'VARCHAR(255)', 1, None, 0)
+(4, '_dob', 'DATE', 0, None, 0)
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -224,7 +255,10 @@ window.onload = wrap_img;
 <p>Uses SQL SELECT statement to read data</p>
 </blockquote>
 <ul>
-<li>What is a connection object?  After you google it, what do you think it does?</li>
+<li>What is a connection object?  After you google it, what do you think it does?<ul>
+<li>Connection object instantiates an object, and connects to our database.</li>
+</ul>
+</li>
 <li>Same for cursor object?</li>
 <li>Look at conn object and cursor object in VSCode debugger.  What attributes are in the object?</li>
 <li>Is "results" an object?  How do you know?</li>
@@ -267,6 +301,26 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(2, 'Nikola Tesla', 'niko', 'sha256$8km5BAy7msO9uRE7$448488ef3ab6217a423705ca90a416cd91119840e2d897a19cf362059f4c617c', '2023-03-15')
+(3, 'Alexander Graham Bell', 'lex', 'sha256$gLAfK7ttv1DSa2sk$53ca93ef312edf6cc7374ca55b6b7690b4122b03c1b845872f85f8c3bcdadbb9', '2023-03-15')
+(4, 'Eli Whitney', 'whit', 'sha256$Mv1cZQIM02qcqMcp$162614fcd46a2a8e3e15c0782c4e397b09197917275a481062a9fc8845a379e4', '2023-03-15')
+(7, 'Annika Liao', 'annikal', 'sha256$Hx5G3bIJwl4JjgQO$d2c1cc3589cd7b6acd33fbede537e5d72ab1aa9910df49e4afdc1cdb5cc536e6', '2007-04-26')
+(9, 'Indiana Jones', 'indi', 'sha256$UfMvdXioSHu4QQcp$b95b58e4fd0e57834c72a318d6a548b788402b1d69b37e7dd741e5b66445ae47', '1920-10-21')
+(11, 'Thomas Edison', 'toby', 'sha256$Miky2V9MudLhDOow$a283e750f97aec2a04348ee3f740ba0a2492db7f05dfda9ad7cfcbe2b3986206', '1847-02-11')
+(12, 'Claire Chen', 'clairec', 'sha256$bUKAYtQTY4nIXdX5$9895e02e35593a9e773a36fde663d9ca691ecfa21cd4cef1f85a8fcd3097f82c', '2006-08-19')
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -327,10 +381,24 @@ window.onload = wrap_img;
     <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     
-<span class="c1">#create()</span>
+<span class="n">create</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>A new user record annika has been created
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -396,7 +464,7 @@ window.onload = wrap_img;
     <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     
-<span class="c1">#update()</span>
+<span class="n">update</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -457,7 +525,7 @@ window.onload = wrap_img;
     <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     
-<span class="c1">#delete()</span>
+<span class="n">delete</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -519,6 +587,24 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(0, 'id', 'INTEGER', 1, None, 1)
+(1, '_name', 'VARCHAR(255)', 1, None, 0)
+(2, '_uid', 'VARCHAR(255)', 1, None, 0)
+(3, '_password', 'VARCHAR(255)', 1, None, 0)
+(4, '_dob', 'DATE', 0, None, 0)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -529,11 +615,15 @@ window.onload = wrap_img;
 <a class="anchor" href="#Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks<a class="anchor-link" href="#Hacks"> </a>
 </h1>
 <ul>
-<li>Add this Blog to you own Blogging site.  In the Blog add notes and observations on each code cell.</li>
-<li>Create a new Table or do something new, <a href="https://www.sqlitetutorial.net/sqlite-python/creating-tables/">sqlite documentation</a>
-</li>
-<li>In implementation in previous bullet, do you see procedural abstraction?</li>
+<li>Add this Blog to you own Blogging site. In the Blog add notes and observations on each code cell.</li>
+<li>In this implementation, do you see procedural abstraction?</li>
+<li>In 2.4a or 2.4b lecture<ul>
+<li>Do you see data abstraction? Complement this with Debugging example.</li>
+<li>Use Imperative or OOP style to Create a new Table or do something that applies to your CPT project.</li>
 </ul>
+</li>
+</ul>
+<p>Reference... <a href="https://www.sqlitetutorial.net/sqlite-python/creating-tables/">sqlite documentation</a></p>
 
 </div>
 </div>
