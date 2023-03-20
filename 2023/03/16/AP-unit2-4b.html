@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      8 min read
     
 </span></p>
 
@@ -224,24 +224,6 @@ window.onload = wrap_img;
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>(0, 'id', 'INTEGER', 1, None, 1)
-(1, '_name', 'VARCHAR(255)', 1, None, 0)
-(2, '_uid', 'VARCHAR(255)', 1, None, 0)
-(3, '_password', 'VARCHAR(255)', 1, None, 0)
-(4, '_dob', 'DATE', 0, None, 0)
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -256,12 +238,24 @@ window.onload = wrap_img;
 </blockquote>
 <ul>
 <li>What is a connection object?  After you google it, what do you think it does?<ul>
-<li>Connection object instantiates an object, and connects to our database.</li>
+<li>Connection object instantiates an object, and connects to our database. It allows our code to interact with the database directly by executing SQL statements.</li>
 </ul>
 </li>
-<li>Same for cursor object?</li>
-<li>Look at conn object and cursor object in VSCode debugger.  What attributes are in the object?</li>
-<li>Is "results" an object?  How do you know?</li>
+<li>Same for cursor object?<ul>
+<li>Cursor objects can access individual rows returned by database queries. It keeps track of where the current position of the database is, to organize everything.</li>
+</ul>
+</li>
+<li>Look at conn object and cursor object in VSCode debugger.  What attributes are in the object?<ul>
+<li>conn object includes variables, as well as 'row_factory', 'isolation_level', and 'in_transaction'. This attributes determines how rows are represented, how a transaction is handled, and whether it is active.<br><img src="./images/connobject.jpg" width="400px">
+</li>
+<li>cursor object includes variables, as well as 'connection', 'description', 'lastrowid', 'row_factory', and 'rowcount'. These attributes basically keep track of the current row, to maintain its position.<br><img src="./images/cursorobject.jpg" width="400px">
+</li>
+</ul>
+</li>
+<li>Is "results" an object?  How do you know?<ul>
+<li>Results is not an object, but simply the tuples that are returned when fetched by the cursor object. </li>
+</ul>
+</li>
 </ul>
 
 </div>
@@ -310,13 +304,12 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>(2, 'Nikola Tesla', 'niko', 'sha256$8km5BAy7msO9uRE7$448488ef3ab6217a423705ca90a416cd91119840e2d897a19cf362059f4c617c', '2023-03-15')
-(3, 'Alexander Graham Bell', 'lex', 'sha256$gLAfK7ttv1DSa2sk$53ca93ef312edf6cc7374ca55b6b7690b4122b03c1b845872f85f8c3bcdadbb9', '2023-03-15')
-(4, 'Eli Whitney', 'whit', 'sha256$Mv1cZQIM02qcqMcp$162614fcd46a2a8e3e15c0782c4e397b09197917275a481062a9fc8845a379e4', '2023-03-15')
-(7, 'Annika Liao', 'annikal', 'sha256$Hx5G3bIJwl4JjgQO$d2c1cc3589cd7b6acd33fbede537e5d72ab1aa9910df49e4afdc1cdb5cc536e6', '2007-04-26')
-(9, 'Indiana Jones', 'indi', 'sha256$UfMvdXioSHu4QQcp$b95b58e4fd0e57834c72a318d6a548b788402b1d69b37e7dd741e5b66445ae47', '1920-10-21')
-(11, 'Thomas Edison', 'toby', 'sha256$Miky2V9MudLhDOow$a283e750f97aec2a04348ee3f740ba0a2492db7f05dfda9ad7cfcbe2b3986206', '1847-02-11')
-(12, 'Claire Chen', 'clairec', 'sha256$bUKAYtQTY4nIXdX5$9895e02e35593a9e773a36fde663d9ca691ecfa21cd4cef1f85a8fcd3097f82c', '2006-08-19')
+<pre>(1, 'Thomas Edison', 'toby', 'sha256$gXJTtCWEJoP1jyoj$564e9bb46020153e8a63d80bba7bde764d4545465d5714910d677296b1f57e3d', '1847-02-11')
+(2, 'Nikola Tesla', 'niko', 'sha256$MtXpvjHsc6G1kdME$44e92a93f5830017e8ca562efaac26e2a602cad753b2d64aa72821e6ff453c9e', '2023-03-19')
+(3, 'Alexander Graham Bell', 'lex', 'sha256$B8ekooEFwbkvzCRa$95e1f3d87202ff3fa525f7f084adc777d6515e9a311aee63f40dbf6419545466', '2023-03-19')
+(4, 'Eli Whitney', 'whit', 'sha256$6i13u7sGd4TmsImm$59e237f1b85ae49cf4c0b03f5b09c2498a30454ed6b170f16f4904ec26a28fbd', '2023-03-19')
+(5, 'Indiana Jones', 'indi', 'sha256$XrX8yVIdUsGaCGdD$89cc2ae9a371db495ff90f034a102d49eb6a66a503d3420fb8dec9a95425a117', '1920-10-21')
+(6, 'Marion Ravenwood', 'raven', 'sha256$Rb4SBnOnzGczKFvG$553ad385a22c2bc00e8e380b6ebcf8fc83132c42e612cc45fe99eacf6d7225e2', '1921-10-21')
 </pre>
 </div>
 </div>
@@ -336,8 +329,14 @@ window.onload = wrap_img;
 <blockquote>
 <p>Uses SQL INSERT to add row</p>
 <ul>
-<li>Compore create() in both SQL lessons.  What is better or worse in the two implementations?</li>
-<li>Explain purpose of SQL INSERT.   Is this the same as User <strong>init</strong>?</li>
+<li>Compare create() in both SQL lessons.  What is better or worse in the two implementations?<ul>
+<li>In 2.4a, SQLite is used, taking user input to create users. It is suited for simple projects and simple relationships between the tables. The input is entered into the database using a SQL query. In 2.4b, SQLAlchemy is used, creating new records. It simplifies complex database operations.</li>
+</ul>
+</li>
+<li>Explain purpose of SQL INSERT.   Is this the same as User <strong>init</strong>?<ul>
+<li>While both SQL INSERT and the <strong>init</strong> method are used to add new data to a database, they serve different purposes. The SQL INSERT command is used to add new rows to a table, while the <strong>init</strong> method is used to initialize the attributes of a new object of a Python class.  </li>
+</ul>
+</li>
 </ul>
 </blockquote>
 
@@ -414,9 +413,18 @@ window.onload = wrap_img;
 <blockquote>
 <p>Uses SQL UPDATE to modify password</p>
 <ul>
-<li>What does the hacked part do?</li>
-<li>Explain try/except, when would except occur?</li>
-<li>What code seems to be repeated in each of these examples to point, why is it repeated?</li>
+<li>What does the hacked part do?<ul>
+<li>The if statement in the update() function checks the length of the user-provided password. If the length of the password is less than two characters, it sets the message variable to "hacked" and changes the password to a predetermined value.</li>
+</ul>
+</li>
+<li>Explain try/except, when would except occur?<ul>
+<li>Code that might raise an error is placed inside the try block, and code to handle the error is placed inside the except block. If an error is raised in the try block, the code in the except block is executed, and the program continues to run. In this code, the try block executes an SQL command to update data in a table. If an error occurs while executing the SQL command, the except block catches the error and prints an error message.</li>
+</ul>
+</li>
+<li>What code seems to be repeated in each of these examples to point, why is it repeated?<ul>
+<li>The repeated code in the examples is the code for connecting to the database and creating a cursor object to execute SQL commands. This code helps interact with the database and must be executed before executing any SQL commands.</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 
@@ -483,8 +491,14 @@ window.onload = wrap_img;
 <blockquote>
 <p>Uses a delete function to remove a user based on a user input of the id.</p>
 <ul>
-<li>Is DELETE a dangerous operation?  Why?</li>
-<li>What is the "f" and {uid} do?</li>
+<li>Is DELETE a dangerous operation?  Why?<ul>
+<li>DELETE can be a dangerous operation because it permanently removes data from a table, and there is no way to undo this action. If the DELETE statement is not carefully constructed, it can delete more data than intended or delete the wrong data entirely. </li>
+</ul>
+</li>
+<li>What is the "f" and {uid} do?<ul>
+<li>The "f" in the print statements stands for "formatted" string. It allows the creation of strings that contain values that are computed at runtime. {uid} is a placeholder that will be replaced with the value of the uid variable when the string is printed.</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 
@@ -544,8 +558,14 @@ window.onload = wrap_img;
 <blockquote>
 <p>CRUD and Schema interactions from one location by running menu. Observe input at the top of VSCode, observe output underneath code cell.</p>
 <ul>
-<li>Why does the menu repeat?</li>
-<li>Could you refactor this menu?  Make it work with a List?</li>
+<li>Why does the menu repeat?<ul>
+<li>The menu repeats because the menu() function is called recursively at the end of each operation. Once an operation is completed, the function calls itself to display the menu again and wait for the user to enter another operation.</li>
+</ul>
+</li>
+<li>Could you refactor this menu?  Make it work with a List?<ul>
+<li>You can refactor this menu, by setting the list's values as(C)reate (R)ead (U)pdate or (D)elete or (S)chema.</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 
