@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      7 min read
+      9 min read
     
 </span></p>
 
@@ -435,9 +435,6 @@ The Man
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="n">lover_album</span><span class="o">.</span><span class="n">items</span><span class="p">():</span> <span class="c1"># iterate using a for loop for key and value</span>
     <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">k</span><span class="p">)</span> <span class="o">+</span> <span class="s2">": "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">))</span>
-
-<span class="c1"># Write your own code to print tracks in readable format</span>
-<span class="c1"># </span>
 </pre></div>
 
     </div>
@@ -483,7 +480,7 @@ producer: ['Taylor Swift', 'Jack Antonoff', 'Joel Little', 'Taylor Swift', 'Loui
 <span class="n">search</span><span class="p">()</span>
 
 <span class="c1"># This is a very basic code segment, how can you improve upon this code?</span>
-<span class="c1">#</span>
+<span class="c1"># Input validation, error handling, and parameters</span>
 <span class="c1">#</span>
 </pre></div>
 
@@ -522,17 +519,116 @@ producer: ['Taylor Swift', 'Jack Antonoff', 'Joel Little', 'Taylor Swift', 'Loui
 </ul>
 </li>
 <li>Expand upon the code given to you, possible improvements in comments</li>
-<li>
-<p>Build your own album showing features of a python dictionary</p>
-</li>
-<li>
-<p>For Mr. Yeung's class: Justify your favorite Taylor Swift song, answer may effect seed</p>
-</li>
+<li>Build your own album showing features of a python dictionary</li>
 </ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Dictionary</th>
+<th>List</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pros</td>
+<td>- Easy search/lookup <br> - Flexible key types</td>
+<td>- Ordered <br> - Allows duplicates <br> - Easy iteration</td>
+</tr>
+<tr>
+<td>Cons</td>
+<td>- Unordered <br> - Keys must be unique</td>
+<td>- Slow lookup <br> - Fixed index</td>
+</tr>
+</tbody>
+</table>
 
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">humbug_album</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"title"</span><span class="p">:</span> <span class="s2">"Humbug"</span><span class="p">,</span>
+    <span class="s2">"artist"</span><span class="p">:</span> <span class="s2">"Arctic Monkeys"</span><span class="p">,</span>
+    <span class="s2">"year"</span><span class="p">:</span> <span class="mi">2009</span><span class="p">,</span>
+    <span class="s2">"genre"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Indie rock"</span><span class="p">,</span> <span class="s2">"Hard rock"</span><span class="p">,</span> <span class="s2">"Psychedelic rock"</span><span class="p">,</span> <span class="s2">"Desert rock"</span><span class="p">],</span>
+    <span class="s2">"tracks"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="mi">1</span><span class="p">:</span> <span class="s2">"My Propeller"</span><span class="p">,</span>
+        <span class="mi">2</span><span class="p">:</span> <span class="s2">"Crying Lightning"</span><span class="p">,</span>
+        <span class="mi">3</span><span class="p">:</span> <span class="s2">"Dangerous Animals"</span><span class="p">,</span>
+        <span class="mi">4</span><span class="p">:</span> <span class="s2">"Secret Door"</span><span class="p">,</span>
+        <span class="mi">5</span><span class="p">:</span> <span class="s2">"Potion Approaching"</span><span class="p">,</span>
+        <span class="mi">6</span><span class="p">:</span> <span class="s2">"Fire And The Thud"</span><span class="p">,</span>
+        <span class="mi">7</span><span class="p">:</span> <span class="s2">"Cornerstone"</span><span class="p">,</span>
+        <span class="mi">8</span><span class="p">:</span> <span class="s2">"Dance Little Liar"</span><span class="p">,</span>
+        <span class="mi">9</span><span class="p">:</span> <span class="s2">"Pretty Visitors"</span><span class="p">,</span>
+        <span class="mi">10</span><span class="p">:</span> <span class="s2">"The Jeweller's Hands"</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1"># Printing the dictionary</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">humbug_album</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">humbug_album</span><span class="p">[</span><span class="s1">'tracks'</span><span class="p">])</span>
+
+<span class="n">humbug_album</span><span class="p">[</span><span class="s2">"producer"</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Josh Homme'</span><span class="p">,</span> <span class="s1">'James Ford'</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">humbug_album</span><span class="p">)</span>
+
+<span class="c1"># Adding a an key-value pair to an existing key </span>
+<span class="n">humbug_album</span><span class="p">[</span><span class="s2">"tracks"</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="mf">7.5</span><span class="p">:</span> <span class="s2">"Catapult"</span><span class="p">})</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">humbug_album</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="n">humbug_album</span><span class="o">.</span><span class="n">items</span><span class="p">():</span> <span class="c1"># iterate using a for loop for key and value</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">k</span><span class="p">)</span> <span class="o">+</span> <span class="s2">": "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">))</span>
+
+
+<span class="k">def</span> <span class="nf">search</span><span class="p">():</span>
+    <span class="n">search</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What would you like to know about the album?"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">humbug_album</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">search</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Invalid Search"</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">humbug_album</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">search</span><span class="o">.</span><span class="n">lower</span><span class="p">()))</span>
+
+<span class="n">search</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{'title': 'Humbug', 'artist': 'Arctic Monkeys', 'year': 2009, 'genre': ['Indie rock', 'Hard rock', 'Psychedelic rock', 'Desert rock'], 'tracks': {1: 'My Propeller', 2: 'Crying Lightning', 3: 'Dangerous Animals', 4: 'Secret Door', 5: 'Potion Approaching', 6: 'Fire And The Thud', 7: 'Cornerstone', 8: 'Dance Little Liar', 9: 'Pretty Visitors', 10: "The Jeweller's Hands"}}
+{1: 'My Propeller', 2: 'Crying Lightning', 3: 'Dangerous Animals', 4: 'Secret Door', 5: 'Potion Approaching', 6: 'Fire And The Thud', 7: 'Cornerstone', 8: 'Dance Little Liar', 9: 'Pretty Visitors', 10: "The Jeweller's Hands"}
+{'title': 'Humbug', 'artist': 'Arctic Monkeys', 'year': 2009, 'genre': ['Indie rock', 'Hard rock', 'Psychedelic rock', 'Desert rock'], 'tracks': {1: 'My Propeller', 2: 'Crying Lightning', 3: 'Dangerous Animals', 4: 'Secret Door', 5: 'Potion Approaching', 6: 'Fire And The Thud', 7: 'Cornerstone', 8: 'Dance Little Liar', 9: 'Pretty Visitors', 10: "The Jeweller's Hands"}, 'producer': ['Josh Homme', 'James Ford']}
+{'title': 'Humbug', 'artist': 'Arctic Monkeys', 'year': 2009, 'genre': ['Indie rock', 'Hard rock', 'Psychedelic rock', 'Desert rock'], 'tracks': {1: 'My Propeller', 2: 'Crying Lightning', 3: 'Dangerous Animals', 4: 'Secret Door', 5: 'Potion Approaching', 6: 'Fire And The Thud', 7: 'Cornerstone', 8: 'Dance Little Liar', 9: 'Pretty Visitors', 10: "The Jeweller's Hands", 7.5: 'Catapult'}, 'producer': ['Josh Homme', 'James Ford']}
+title: Humbug
+artist: Arctic Monkeys
+year: 2009
+genre: ['Indie rock', 'Hard rock', 'Psychedelic rock', 'Desert rock']
+tracks: {1: 'My Propeller', 2: 'Crying Lightning', 3: 'Dangerous Animals', 4: 'Secret Door', 5: 'Potion Approaching', 6: 'Fire And The Thud', 7: 'Cornerstone', 8: 'Dance Little Liar', 9: 'Pretty Visitors', 10: "The Jeweller's Hands", 7.5: 'Catapult'}
+producer: ['Josh Homme', 'James Ford']
+Arctic Monkeys
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
