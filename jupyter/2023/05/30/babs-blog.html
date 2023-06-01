@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Code Couture Code Walkthrough | ANNIKA</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Code Couture Code Walkthrough" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="How I coded the Code Couture game!" />
+<meta property="og:description" content="How I coded the Code Couture game!" />
+<link rel="canonical" href="https://annikaliao.github.io/annika/jupyter/2023/05/30/babs-blog.html" />
+<meta property="og:url" content="https://annikaliao.github.io/annika/jupyter/2023/05/30/babs-blog.html" />
+<meta property="og:site_name" content="ANNIKA" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-05-30T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Code Couture Code Walkthrough" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-05-30T00:00:00-05:00","datePublished":"2023-05-30T00:00:00-05:00","description":"How I coded the Code Couture game!","headline":"Code Couture Code Walkthrough","mainEntityOfPage":{"@type":"WebPage","@id":"https://annikaliao.github.io/annika/jupyter/2023/05/30/babs-blog.html"},"url":"https://annikaliao.github.io/annika/jupyter/2023/05/30/babs-blog.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/annika/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://annikaliao.github.io/annika/feed.xml" title="ANNIKA" /><link rel="shortcut icon" type="image/x-icon" href="/annika/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/annika/">ANNIKA</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/annika/work">Work</a><a class="page-link" href="/annika/about/">About Me</a><a class="page-link" href="/annika/search/">Search</a><a class="page-link" href="/annika/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Code Couture Code Walkthrough</h1><p class="page-description">How I coded the Code Couture game!</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-05-30T00:00:00-05:00" itemprop="datePublished">
+        May 30, 2023
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      8 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/annika/categories/#jupyter">jupyter</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/annikaliao/annika/tree/master/_notebooks/2023-05-30-babs-blog.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/annika/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/annikaliao/annika/master?filepath=_notebooks%2F2023-05-30-babs-blog.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/annika/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/annikaliao/annika/blob/master/_notebooks/2023-05-30-babs-blog.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/annika/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Fannikaliao%2Fannika%2Fblob%2Fmaster%2F_notebooks%2F2023-05-30-babs-blog.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/annika/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#Story">Story </a></li>
+<li class="toc-entry toc-h2"><a href="#Game">Game </a></li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2023-05-30-babs-blog.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Story">
+<a class="anchor" href="#Story" aria-hidden="true"><span class="octicon octicon-link"></span></a>Story<a class="anchor-link" href="#Story"> </a>
+</h2>
+<blockquote>
+<p>In our game, you are able to interact with the story, immersing yourself as the main character</p>
+</blockquote>
+<p>After clicking the PLAY NOW button on the homepage, user is prompted to enter their name, which will be saved.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">"nes-field is-inline"</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">label</span> <span class="k">for</span><span class="o">=</span><span class="s2">"error_field"</span><span class="o">&gt;</span><span class="n">Name</span><span class="o">&lt;/</span><span class="n">label</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">"text"</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"error_field"</span> <span class="n">class</span><span class="o">=</span><span class="s2">"nes-input is-error"</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"nameInput"</span> <span class="n">placeholder</span><span class="o">=</span><span class="s2">"What's Your Name ?"</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="err">!</span><span class="o">--&lt;</span><span class="n">a</span> <span class="n">class</span><span class="o">=</span><span class="s2">"nes-btn is-error"</span> <span class="n">href</span><span class="o">=</span><span class="s2">"{{ site.baseurl }}/story"</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"myButton"</span><span class="o">&gt;</span><span class="n">PLAY</span> <span class="n">NOW</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;--&gt;</span>
+<span class="o">&lt;</span><span class="n">button</span> <span class="n">class</span><span class="o">=</span><span class="s2">"nes-btn is-error"</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"saveName(); window.location.href='{{ site.baseurl }}/story'"</span><span class="o">&gt;</span><span class="n">PLAY</span> <span class="n">NOW</span><span class="o">&lt;/</span><span class="n">button</span><span class="o">&gt;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">function</span> <span class="n">saveName</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">var</span> <span class="n">name</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">"nameInput"</span><span class="p">)</span><span class="o">.</span><span class="n">value</span><span class="p">;</span>
+    <span class="n">localStorage</span><span class="o">.</span><span class="n">setItem</span><span class="p">(</span><span class="s2">"userName"</span><span class="p">,</span> <span class="n">name</span><span class="p">);</span>
+    <span class="n">window</span><span class="o">.</span><span class="n">location</span><span class="o">.</span><span class="n">href</span> <span class="o">=</span> <span class="s2">"page2.html"</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>After clicking the continue button, a juicy text conversation plays out on the next page, directly involving the user, and prompts the user to respond. The user may enter whatever text they'd like, and it will be displayed in the chat, next to an icon labeled with their name.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="o">&lt;</span><span class="n">section</span> <span class="n">class</span><span class="o">=</span><span class="s2">"message-list"</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="err">!</span><span class="o">--</span><span class="n">Boyfriend</span><span class="o">--&gt;</span>
+        <span class="o">&lt;</span><span class="n">section</span> <span class="n">class</span><span class="o">=</span><span class="s2">"message -left"</span><span class="o">&gt;</span>
+          <span class="o">&lt;</span><span class="n">i</span> <span class="n">class</span><span class="o">=</span><span class="s2">"nes-bcrikko"</span><span class="o">&gt;&lt;/</span><span class="n">i</span><span class="o">&gt;</span>
+          <span class="o">&lt;</span><span class="err">!</span><span class="o">--</span> <span class="n">Balloon</span> <span class="o">--&gt;</span>
+          <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">"nes-balloon from-left"</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="n">Hey</span><span class="p">,</span> <span class="n">I</span> <span class="n">need</span> <span class="n">to</span> <span class="n">be</span> <span class="n">honest</span> <span class="k">with</span> <span class="n">you</span><span class="o">.</span> <span class="n">I</span> <span class="n">cheated</span> <span class="n">on</span> <span class="n">you</span><span class="o">.&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+          <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+        <span class="o">&lt;/</span><span class="n">section</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="err">!</span><span class="o">--</span><span class="n">Boyfriend</span><span class="o">--&gt;</span>
+        <span class="o">&lt;</span><span class="n">section</span> <span class="n">class</span><span class="o">=</span><span class="s2">"message -left"</span><span class="o">&gt;</span>
+          <span class="o">&lt;</span><span class="n">i</span> <span class="n">class</span><span class="o">=</span><span class="s2">"nes-bcrikko"</span><span class="o">&gt;&lt;/</span><span class="n">i</span><span class="o">&gt;</span>
+          <span class="o">&lt;</span><span class="err">!</span><span class="o">--</span> <span class="n">Balloon</span> <span class="o">--&gt;</span>
+          <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">"nes-balloon from-left"</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="n">Honestly</span><span class="p">,</span> <span class="n">they</span> <span class="n">are</span> <span class="n">better</span> <span class="n">than</span> <span class="n">you</span> <span class="n">anyways</span><span class="o">.&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+          <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+        <span class="o">&lt;/</span><span class="n">section</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">section</span> <span class="n">align</span><span class="o">=</span><span class="s2">"right"</span> <span class="n">class</span><span class="o">=</span><span class="s2">"message -right"</span><span class="o">&gt;</span>
+          <span class="o">&lt;</span><span class="err">!</span><span class="o">--</span> <span class="n">Balloon</span> <span class="o">--&gt;</span>
+          <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">"nes-balloon from-right"</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">p</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"contentDisplay"</span><span class="o">&gt;&lt;</span><span class="n">span</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"inputMessage"</span><span class="o">&gt;&lt;/</span><span class="n">span</span><span class="o">&gt;&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+          <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+          <span class="o">&lt;</span><span class="n">i</span> <span class="n">class</span><span class="o">=</span><span class="s2">"nes-bcrikko"</span><span class="o">&gt;&lt;/</span><span class="n">i</span><span class="o">&gt;</span>
+          <span class="o">&lt;</span><span class="n">div</span> <span class="n">align</span><span class="o">=</span><span class="s2">"right"</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"nameDisplay"</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+        <span class="o">&lt;/</span><span class="n">section</span><span class="o">&gt;</span>
+      <span class="o">&lt;/</span><span class="n">section</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">"nes-field"</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">label</span> <span class="k">for</span><span class="o">=</span><span class="s2">"name_field"</span><span class="o">&gt;&lt;/</span><span class="n">label</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">"text"</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"name_field"</span> <span class="n">class</span><span class="o">=</span><span class="s2">"nes-input"</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"textInput"</span> <span class="n">onkeydown</span><span class="o">=</span><span class="s2">"keyEnter(event)"</span> <span class="n">placeholder</span><span class="o">=</span><span class="s2">"Click ENTER key to send"</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="err">!</span><span class="o">--&lt;</span><span class="n">button</span> <span class="nb">type</span><span class="o">=</span><span class="s2">"button"</span> <span class="n">class</span><span class="o">=</span><span class="s2">"nes-btn is-primary"</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"printMessage()"</span><span class="o">&gt;</span><span class="n">send</span><span class="o">&lt;/</span><span class="n">button</span><span class="o">&gt;--&gt;</span>
+      <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>savedName() calls the stored name input from the last page, and displays it under the icon. keyEnter() senses when teh enter key is clicked, and when clicked, the content from the text input is displayed on the text bubble. It appears that the user is responding to the text messages from before. Now, the user clicks continue to go to the game.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">var</span> <span class="n">savedName</span> <span class="o">=</span> <span class="n">localStorage</span><span class="o">.</span><span class="n">getItem</span><span class="p">(</span><span class="s2">"userName"</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">savedName</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">"nameDisplay"</span><span class="p">)</span><span class="o">.</span><span class="n">textContent</span> <span class="o">=</span> <span class="n">savedName</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">"nameDisplay"</span><span class="p">)</span><span class="o">.</span><span class="n">textContent</span> <span class="o">=</span> <span class="s2">"User"</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="n">function</span> <span class="n">keyEnter</span><span class="p">(</span><span class="n">event</span><span class="p">)</span> <span class="p">{</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">event</span><span class="o">.</span><span class="n">keyCode</span> <span class="o">===</span> <span class="mi">13</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">event</span><span class="o">.</span><span class="n">preventDefault</span><span class="p">();</span>
+    <span class="n">displayContent</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">function</span> <span class="n">displayContent</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">var</span> <span class="nb">input</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">"textInput"</span><span class="p">)</span><span class="o">.</span><span class="n">value</span><span class="p">;</span>
+    <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">"contentDisplay"</span><span class="p">)</span><span class="o">.</span><span class="n">textContent</span> <span class="o">=</span> <span class="nb">input</span><span class="p">;</span>
+    <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">"textInput"</span><span class="p">)</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="s2">""</span><span class="p">;</span> <span class="o">//</span> <span class="n">Reset</span> <span class="nb">input</span> <span class="n">value</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Game">
+<a class="anchor" href="#Game" aria-hidden="true"><span class="octicon octicon-link"></span></a>Game<a class="anchor-link" href="#Game"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Canvases positioned on the left side of the page holds all of the elements. On load, the blank base body is the only thing visible on the base canvas. Each type of clothing that the user can put on their doll has its own canvas in the same position as the base canvas, which is where the image will be displayed. The base body images and the clothing images will appear to be layered. There are three buttons under the canvas, each with different skin tones. The user can click the skin tone they want, and the base body will have that skin color.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="o">&lt;</span><span class="n">div</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"display"</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">div</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"canvas"</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">canvas</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"base"</span><span class="o">&gt;&lt;/</span><span class="n">canvas</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">canvas</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"shoes"</span><span class="o">&gt;&lt;/</span><span class="n">canvas</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">canvas</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"dress"</span><span class="o">&gt;&lt;/</span><span class="n">canvas</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">canvas</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"pants"</span><span class="o">&gt;&lt;/</span><span class="n">canvas</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">canvas</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"shirtbase"</span><span class="o">&gt;&lt;/</span><span class="n">canvas</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">canvas</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"shirt"</span><span class="o">&gt;&lt;/</span><span class="n">canvas</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">canvas</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"eyes"</span><span class="o">&gt;&lt;/</span><span class="n">canvas</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">canvas</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"hair"</span><span class="o">&gt;&lt;/</span><span class="n">canvas</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">canvas</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"accessories"</span><span class="o">&gt;&lt;/</span><span class="n">canvas</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">canvas</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"blank"</span><span class="o">&gt;&lt;/</span><span class="n">canvas</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">img</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"results"</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">audio</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"music"</span> <span class="n">src</span><span class="o">=</span><span class="s2">"audio/gametheme.mp3"</span> <span class="n">autoplay</span> <span class="n">loop</span><span class="o">&gt;&lt;/</span><span class="n">audio</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">div</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"skin"</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">button</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"medskin"</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"medskin()"</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">span</span> <span class="n">class</span><span class="o">=</span><span class="s2">"medskin-icon"</span><span class="o">&gt;&lt;/</span><span class="n">span</span><span class="o">&gt;</span>
+      <span class="o">&lt;/</span><span class="n">button</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">button</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"lightskin"</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"lightskin()"</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">span</span> <span class="n">class</span><span class="o">=</span><span class="s2">"lightskin-icon"</span><span class="o">&gt;&lt;/</span><span class="n">span</span><span class="o">&gt;</span>
+      <span class="o">&lt;/</span><span class="n">button</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">button</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"darkskin"</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"darkskin()"</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">span</span> <span class="n">class</span><span class="o">=</span><span class="s2">"darkskin-icon"</span><span class="o">&gt;&lt;/</span><span class="n">span</span><span class="o">&gt;</span>
+      <span class="o">&lt;/</span><span class="n">button</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+  <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>When changing the skin color, a corresponding function is assigned to each color button. Each skin color is a new base body image. On click of the button, the function clears the canvas of the previous image, and displays the new one.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">function</span> <span class="n">medskin</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">context</span><span class="o">.</span><span class="n">clearRect</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">canvas</span><span class="o">.</span><span class="n">width</span><span class="p">,</span> <span class="n">canvas</span><span class="o">.</span><span class="n">height</span><span class="p">);</span>
+    <span class="n">baseimg</span><span class="o">.</span><span class="n">src</span><span class="o">=</span><span class="s1">'https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/base/base1.png'</span><span class="p">;</span>
+    <span class="n">baseimg</span><span class="o">.</span><span class="n">onload</span> <span class="o">=</span> <span class="n">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">context</span><span class="o">.</span><span class="n">drawImage</span><span class="p">(</span><span class="n">baseimg</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">canvas</span><span class="o">.</span><span class="n">width</span><span class="p">,</span> <span class="n">canvas</span><span class="o">.</span><span class="n">height</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">function</span> <span class="n">lightskin</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">context</span><span class="o">.</span><span class="n">clearRect</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">canvas</span><span class="o">.</span><span class="n">width</span><span class="p">,</span> <span class="n">canvas</span><span class="o">.</span><span class="n">height</span><span class="p">);</span>
+    <span class="n">baseimg</span><span class="o">.</span><span class="n">src</span><span class="o">=</span><span class="s1">'https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/base/base2.png'</span><span class="p">;</span>
+    <span class="n">baseimg</span><span class="o">.</span><span class="n">onload</span> <span class="o">=</span> <span class="n">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">context</span><span class="o">.</span><span class="n">drawImage</span><span class="p">(</span><span class="n">baseimg</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">canvas</span><span class="o">.</span><span class="n">width</span><span class="p">,</span> <span class="n">canvas</span><span class="o">.</span><span class="n">height</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">function</span> <span class="n">darkskin</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">context</span><span class="o">.</span><span class="n">clearRect</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">canvas</span><span class="o">.</span><span class="n">width</span><span class="p">,</span> <span class="n">canvas</span><span class="o">.</span><span class="n">height</span><span class="p">);</span>
+    <span class="n">baseimg</span><span class="o">.</span><span class="n">src</span><span class="o">=</span><span class="s1">'https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/base/base3.png'</span><span class="p">;</span>
+    <span class="n">baseimg</span><span class="o">.</span><span class="n">onload</span> <span class="o">=</span> <span class="n">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">context</span><span class="o">.</span><span class="n">drawImage</span><span class="p">(</span><span class="n">baseimg</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">canvas</span><span class="o">.</span><span class="n">width</span><span class="p">,</span> <span class="n">canvas</span><span class="o">.</span><span class="n">height</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>On the right of the screen, there is a menu holding all of the clothing options. The categories are displayed on the top of the menu, and the user can click between them. On each page, there are several images of clothing that they can click for it to appear on the canvas on the body. The function of the buttons will be explained in the next segment...</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">"content-item"</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"dress-content"</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">table</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;&lt;</span><span class="n">button</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"dressbtn(0)"</span><span class="o">&gt;&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">"images/dresses/dress1.png"</span> <span class="n">alt</span><span class="o">=</span><span class="s2">"dress1"</span><span class="o">&gt;&lt;/</span><span class="n">button</span><span class="o">&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;&lt;</span><span class="n">button</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"dressbtn(1)"</span><span class="o">&gt;&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">"images/dresses/dress2.png"</span> <span class="n">alt</span><span class="o">=</span><span class="s2">"dress2"</span><span class="o">&gt;&lt;/</span><span class="n">button</span><span class="o">&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+  <span class="o">&lt;/</span><span class="n">table</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">"content-item"</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"shirt-content"</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">table</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;&lt;</span><span class="n">button</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"shirtbtn(0)"</span><span class="o">&gt;&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">"images/zcropped/top1c.png"</span> <span class="n">alt</span><span class="o">=</span><span class="s2">"shirt1"</span><span class="o">&gt;&lt;/</span><span class="n">button</span><span class="o">&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;&lt;</span><span class="n">button</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"shirtbtn(1)"</span><span class="o">&gt;&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">"images/zcropped/top2c.png"</span> <span class="n">alt</span><span class="o">=</span><span class="s2">"shirt2"</span><span class="o">&gt;&lt;/</span><span class="n">button</span><span class="o">&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>          
+    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;&lt;</span><span class="n">button</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"shirtbtn(2)"</span><span class="o">&gt;&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">"images/zcropped/top3c.png"</span> <span class="n">alt</span><span class="o">=</span><span class="s2">"shirt3"</span><span class="o">&gt;&lt;/</span><span class="n">button</span><span class="o">&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>        
+    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;&lt;</span><span class="n">button</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"shirtbtn(3)"</span><span class="o">&gt;&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">"images/zcropped/top4c.png"</span> <span class="n">alt</span><span class="o">=</span><span class="s2">"shirt4"</span><span class="o">&gt;&lt;/</span><span class="n">button</span><span class="o">&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>           
+    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+  <span class="o">&lt;/</span><span class="n">table</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">"content-item"</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"pants-content"</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">table</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;&lt;</span><span class="n">button</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"pantsbtn(0)"</span><span class="o">&gt;&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">"images/zcropped/bottom1c.png"</span> <span class="n">alt</span><span class="o">=</span><span class="s2">"pants1"</span><span class="o">&gt;&lt;/</span><span class="n">button</span><span class="o">&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>           
+    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;&lt;</span><span class="n">button</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"pantsbtn(1)"</span><span class="o">&gt;&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">"images/zcropped/bottom2c.png"</span> <span class="n">alt</span><span class="o">=</span><span class="s2">"pants2"</span><span class="o">&gt;&lt;/</span><span class="n">button</span><span class="o">&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>          
+    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;&lt;</span><span class="n">button</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"pantsbtn(2)"</span><span class="o">&gt;&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">"images/zcropped/bottom3c.png"</span> <span class="n">alt</span><span class="o">=</span><span class="s2">"pants3"</span><span class="o">&gt;&lt;/</span><span class="n">button</span><span class="o">&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>           
+    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;&lt;</span><span class="n">button</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"pantsbtn(3)"</span><span class="o">&gt;&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">"images/zcropped/bottom4c.png"</span> <span class="n">alt</span><span class="o">=</span><span class="s2">"pants4"</span><span class="o">&gt;&lt;/</span><span class="n">button</span><span class="o">&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>          
+    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;&lt;</span><span class="n">button</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"pantsbtn(4)"</span><span class="o">&gt;&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">"images/zcropped/bottom5c.png"</span> <span class="n">alt</span><span class="o">=</span><span class="s2">"pants5"</span><span class="o">&gt;&lt;/</span><span class="n">button</span><span class="o">&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>          
+    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;&lt;</span><span class="n">button</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"pantsbtn(5)"</span><span class="o">&gt;&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">"images/zcropped/bottom6c.png"</span> <span class="n">alt</span><span class="o">=</span><span class="s2">"pants6"</span><span class="o">&gt;&lt;/</span><span class="n">button</span><span class="o">&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>         
+    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+  <span class="o">&lt;/</span><span class="n">table</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">"content-item"</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"shoes-content"</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">table</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;&lt;</span><span class="n">button</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"shoesbtn(0)"</span><span class="o">&gt;&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">"images/zcropped/shoe1c.png"</span> <span class="n">alt</span><span class="o">=</span><span class="s2">"shoe1"</span><span class="o">&gt;&lt;/</span><span class="n">button</span><span class="o">&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;&lt;</span><span class="n">button</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"shoesbtn(1)"</span><span class="o">&gt;&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">"images/zcropped/shoe2c.png"</span> <span class="n">alt</span><span class="o">=</span><span class="s2">"shoe2"</span><span class="o">&gt;&lt;/</span><span class="n">button</span><span class="o">&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;&lt;</span><span class="n">button</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"shoesbtn(2)"</span><span class="o">&gt;&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">"images/zcropped/shoe3c.png"</span> <span class="n">alt</span><span class="o">=</span><span class="s2">"shoe3"</span><span class="o">&gt;&lt;/</span><span class="n">button</span><span class="o">&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;&lt;</span><span class="n">button</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"shoesbtn(3)"</span><span class="o">&gt;&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">"images/zcropped/shoe4c.png"</span> <span class="n">alt</span><span class="o">=</span><span class="s2">"shoe4"</span><span class="o">&gt;&lt;/</span><span class="n">button</span><span class="o">&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;&lt;</span><span class="n">button</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"shoesbtn(4)"</span><span class="o">&gt;&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">"images/zcropped/shoe5c.png"</span> <span class="n">alt</span><span class="o">=</span><span class="s2">"shoe5"</span><span class="o">&gt;&lt;/</span><span class="n">button</span><span class="o">&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+  <span class="o">&lt;/</span><span class="n">table</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Upon click of the image/button, a function with an index is called. Each element, or piece of clothing, has a different assigned index. If the user selects the first shirt as the shirt they'd like to put on their doll:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">var</span> <span class="n">shirtcanvas</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s1">'shirt'</span><span class="p">);</span>
+<span class="n">var</span> <span class="n">shirtcontext</span> <span class="o">=</span> <span class="n">shirtcanvas</span><span class="o">.</span><span class="n">getContext</span><span class="p">(</span><span class="s1">'2d'</span><span class="p">);</span>
+
+
+<span class="n">var</span> <span class="n">shirtImages</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="s1">'https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/tops/top1.png'</span><span class="p">,</span>
+  <span class="s1">'https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/tops/top2.png'</span><span class="p">,</span>
+  <span class="s1">'https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/tops/top3.png'</span><span class="p">,</span>
+  <span class="s2">"https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/tops/top4.png"</span><span class="p">,</span>
+<span class="p">];</span>
+
+<span class="n">var</span> <span class="n">shirtImage</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Image</span><span class="p">();</span>
+<span class="n">var</span> <span class="n">shirtIndex</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="o">//</span> <span class="n">Track</span> <span class="n">the</span> <span class="n">current</span> <span class="n">shirt</span> <span class="n">index</span>
+<span class="n">var</span> <span class="n">shirtVisible</span> <span class="o">=</span> <span class="n">false</span><span class="p">;</span> <span class="o">//</span> <span class="n">Flag</span> <span class="n">to</span> <span class="n">track</span> <span class="n">shirt</span> <span class="n">visibility</span>
+
+<span class="n">function</span> <span class="n">shirtbtn</span><span class="p">(</span><span class="n">index</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">index</span> <span class="o">===</span> <span class="n">shirtIndex</span><span class="p">)</span> <span class="p">{</span>
+    <span class="o">//</span> <span class="n">Same</span> <span class="n">button</span> <span class="n">clicked</span> <span class="n">again</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">shirtVisible</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">shirtcontext</span><span class="o">.</span><span class="n">clearRect</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">shirtcanvas</span><span class="o">.</span><span class="n">width</span><span class="p">,</span> <span class="n">shirtcanvas</span><span class="o">.</span><span class="n">height</span><span class="p">);</span>
+      <span class="n">shirtVisible</span> <span class="o">=</span> <span class="n">false</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="n">shirtcontext</span><span class="o">.</span><span class="n">drawImage</span><span class="p">(</span><span class="n">shirtImage</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">shirtcanvas</span><span class="o">.</span><span class="n">width</span><span class="p">,</span> <span class="n">shirtcanvas</span><span class="o">.</span><span class="n">height</span><span class="p">);</span>
+      <span class="n">shirtVisible</span> <span class="o">=</span> <span class="n">true</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="o">//</span> <span class="n">Different</span> <span class="n">button</span> <span class="n">clicked</span><span class="p">,</span> <span class="n">update</span> <span class="n">the</span> <span class="n">current</span> <span class="n">index</span> <span class="ow">and</span> <span class="n">display</span> <span class="n">the</span> <span class="n">shirt</span>
+    <span class="n">shirtIndex</span> <span class="o">=</span> <span class="n">index</span><span class="p">;</span>
+    <span class="n">shirtImage</span><span class="o">.</span><span class="n">onload</span> <span class="o">=</span> <span class="n">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="n">shirtcontext</span><span class="o">.</span><span class="n">clearRect</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">shirtcanvas</span><span class="o">.</span><span class="n">width</span><span class="p">,</span> <span class="n">shirtcanvas</span><span class="o">.</span><span class="n">height</span><span class="p">);</span>
+      <span class="n">shirtcontext</span><span class="o">.</span><span class="n">drawImage</span><span class="p">(</span><span class="n">shirtImage</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">shirtcanvas</span><span class="o">.</span><span class="n">width</span><span class="p">,</span> <span class="n">shirtcanvas</span><span class="o">.</span><span class="n">height</span><span class="p">);</span>
+      <span class="n">shirtVisible</span> <span class="o">=</span> <span class="n">true</span><span class="p">;</span>
+    <span class="p">};</span>
+    <span class="n">shirtImage</span><span class="o">.</span><span class="n">src</span> <span class="o">=</span> <span class="n">shirtImages</span><span class="p">[</span><span class="n">index</span><span class="p">];</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The index of the first shirt is 0, so when the function shirtbtn() is called, 0 is the index used throughout the function. First, it checks whether 0 is already the index, aka if the shirt is already on the doll. If it is, which means the user has already clicked on the same shirt before, it will remove the shirt. It will do this by clearing the shirtcanvas. If the index was previously a different number, then 0 will be assigned to the index. The image comes from the shirtImages list, and the image at index 0 will be called. This is the first shirt in the list, and it will be drawn on the shirt canvas, appearing right on top of the base body. <br>
+<em>The original index of shirtIndex is -1, to represent that no shirt is chosen. <br></em>If the canvas is cleared, shirtVisible is false.</p>
+<p>The function is the approximately the same for the dresses, shirts, pants, and shoes. The hair is a little different:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="o">&lt;</span><span class="n">div</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"hairbox"</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">"body-arrow"</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"L-arrow"</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">i</span> <span class="n">class</span><span class="o">=</span><span class="s2">"fa fa-solid fa-angle-left fa-3x"</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"hairbtn-L"</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"hairbtnL()"</span><span class="o">&gt;&lt;/</span><span class="n">i</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">canvas</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"hairDcanvas"</span><span class="o">&gt;&lt;/</span><span class="n">canvas</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">"body-arrow"</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"R-arrow"</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">i</span> <span class="n">class</span><span class="o">=</span><span class="s2">"fa fa-solid fa-angle-right fa-3x"</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"hairbtn-R"</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"hairbtnR()"</span><span class="o">&gt;&lt;/</span><span class="n">i</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">div</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"hair-setting"</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">div</span><span class="o">&gt;&lt;</span><span class="n">button</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"hairundo"</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"hairundobtn()"</span><span class="o">&gt;</span> <span class="n">Remove</span> <span class="o">&lt;/</span><span class="n">button</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The user is able to click arrows in order to select the hair that they want. The hair selected will be displayed on the menu as well as on the doll.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">var</span> <span class="n">haircanvas</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s1">'hair'</span><span class="p">);</span>
+<span class="n">var</span> <span class="n">haircontext</span> <span class="o">=</span> <span class="n">haircanvas</span><span class="o">.</span><span class="n">getContext</span><span class="p">(</span><span class="s1">'2d'</span><span class="p">);</span>
+<span class="n">var</span> <span class="n">hairDcanvas</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s1">'hairDcanvas'</span><span class="p">);</span>
+<span class="n">var</span> <span class="n">hairDcontext</span> <span class="o">=</span> <span class="n">hairDcanvas</span><span class="o">.</span><span class="n">getContext</span><span class="p">(</span><span class="s1">'2d'</span><span class="p">);</span>
+
+<span class="n">var</span> <span class="n">hairImages</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="s1">'https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/hair/hairL-Bla.png'</span><span class="p">,</span>
+  <span class="s1">'https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/hair/hairL-Blo.png'</span><span class="p">,</span>
+  <span class="s1">'https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/hair/hairL-Bro.png'</span><span class="p">,</span>
+  <span class="s2">"https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/hair/hairL-G.png"</span><span class="p">,</span>
+  <span class="s2">"https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/hair/hairS-Bla.png"</span><span class="p">,</span>
+  <span class="s2">"https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/hair/hairS-Blo.png"</span><span class="p">,</span>
+  <span class="s2">"https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/hair/hairS-Bro.png"</span><span class="p">,</span>
+  <span class="s2">"https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/hair/hairS-G.png"</span><span class="p">,</span>
+<span class="p">];</span>
+
+
+<span class="n">var</span> <span class="n">hairImage</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Image</span><span class="p">();</span>
+<span class="n">var</span> <span class="n">hairIndex</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="o">//</span> <span class="n">Track</span> <span class="n">the</span> <span class="n">current</span> <span class="n">hair</span> <span class="n">index</span>
+<span class="n">var</span> <span class="n">hairVisible</span> <span class="o">=</span> <span class="n">false</span><span class="p">;</span> <span class="o">//</span> <span class="n">Flag</span> <span class="n">to</span> <span class="n">track</span> <span class="n">hair</span> <span class="n">visibility</span>
+
+<span class="n">function</span> <span class="n">hairbtnL</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">hairIndex</span><span class="o">--</span><span class="p">;</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">hairIndex</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">hairIndex</span> <span class="o">=</span> <span class="n">hairImages</span><span class="o">.</span><span class="n">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">hairbtn</span><span class="p">(</span><span class="n">hairIndex</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="n">function</span> <span class="n">hairbtnR</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">hairIndex</span><span class="o">++</span><span class="p">;</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">hairIndex</span> <span class="o">&gt;=</span> <span class="n">hairImages</span><span class="o">.</span><span class="n">length</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">hairIndex</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">hairbtn</span><span class="p">(</span><span class="n">hairIndex</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="n">function</span> <span class="n">hairbtn</span><span class="p">(</span><span class="n">index</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">hairundo</span> <span class="o">===</span> <span class="n">true</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">document</span><span class="o">.</span><span class="n">querySelector</span><span class="p">(</span><span class="s1">'#hairundo'</span><span class="p">)</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="s1">'REMOVE'</span><span class="p">;</span>
+    <span class="n">hairundo</span> <span class="o">=</span> <span class="n">false</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">hairIndex</span> <span class="o">=</span> <span class="n">index</span><span class="p">;</span>
+  <span class="n">hairImage</span><span class="o">.</span><span class="n">src</span> <span class="o">=</span> <span class="n">hairImages</span><span class="p">[</span><span class="n">index</span><span class="p">];</span>
+  <span class="n">hairImage</span><span class="o">.</span><span class="n">onload</span> <span class="o">=</span> <span class="n">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">haircontext</span><span class="o">.</span><span class="n">clearRect</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">haircanvas</span><span class="o">.</span><span class="n">width</span><span class="p">,</span> <span class="n">haircanvas</span><span class="o">.</span><span class="n">height</span><span class="p">);</span>
+    <span class="n">haircontext</span><span class="o">.</span><span class="n">drawImage</span><span class="p">(</span><span class="n">hairImage</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">haircanvas</span><span class="o">.</span><span class="n">width</span><span class="p">,</span> <span class="n">haircanvas</span><span class="o">.</span><span class="n">height</span><span class="p">);</span>
+    
+    <span class="n">hairDcontext</span><span class="o">.</span><span class="n">clearRect</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">hairDcanvas</span><span class="o">.</span><span class="n">width</span><span class="p">,</span> <span class="n">hairDcanvas</span><span class="o">.</span><span class="n">height</span><span class="p">);</span>    
+    <span class="n">hairDcontext</span><span class="o">.</span><span class="n">drawImage</span><span class="p">(</span><span class="n">hairImage</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">hairDcanvas</span><span class="o">.</span><span class="n">width</span><span class="p">,</span> <span class="mi">350</span><span class="p">);</span>
+  <span class="p">};</span>
+<span class="p">}</span>
+
+<span class="n">var</span> <span class="n">hairundo</span> <span class="o">=</span> <span class="n">false</span><span class="p">;</span>
+
+<span class="n">function</span> <span class="n">hairundobtn</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">haircontext</span><span class="o">.</span><span class="n">clearRect</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">canvas</span><span class="o">.</span><span class="n">width</span><span class="p">,</span> <span class="n">canvas</span><span class="o">.</span><span class="n">height</span><span class="p">);</span>
+  <span class="n">hairundo</span> <span class="o">=</span> <span class="n">true</span><span class="p">;</span>
+  <span class="n">document</span><span class="o">.</span><span class="n">querySelector</span><span class="p">(</span><span class="s1">'#hairundo'</span><span class="p">)</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="s1">'remove'</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>haircanvas is the one on the doll, hairdcanvas is the one in the menu. The same image is displayed on both. When the user clicks the right arrow button, the hair index increases by one. If the index is more than how many hair items there are, 0 is assigned, which is the first one. When the user clicks left, hair index decreases. If the index becomes less than 0, the last in the list is assigned. Once the arrow is clicked, hairbtn() is called, with the index assigned after increasing or decreasing the previous value. From here, the function is very similar to the other clothing items, except, there is no visibility tracked, instead there is a remove button. The images are drawn on the canvas the same way. If the user clicks the REMOVE button, the canvas is cleared, leaving the doll bald. However, the previous hair will still be displayed on the menu, with the index saved, so if the user clicks the arrow again, the hair list will be at the same place.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>That is the aspects of our simple Code Couture dress up game. Happy styling!</p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><a class="u-url" href="/annika/jupyter/2023/05/30/babs-blog.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/annika/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://annikaliao.github.io/annika/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/annika/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Annika&#39;s APCSP blog!</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li>
+  <a rel="me" href="”https://github.com/nighthawkcoders“" target="_blank" title="github">
+    <svg class="svg-icon grey">
+      <use xlink:href="/annika/assets/minima-social-icons.svg#github"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="”https://twitter.com/NighthawkCoding“" target="_blank" title="twitter">
+    <svg class="svg-icon grey">
+      <use xlink:href="/annika/assets/minima-social-icons.svg#twitter"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="”https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q“" target="_blank" title="youtube">
+    <svg class="svg-icon grey">
+      <use xlink:href="/annika/assets/minima-social-icons.svg#youtube"></use>
+    </svg>
+  </a>
+</li>
+</ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
